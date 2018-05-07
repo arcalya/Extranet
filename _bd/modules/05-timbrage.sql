@@ -1,0 +1,35 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+
+CREATE TABLE IF NOT EXISTS `info` (
+  `fullname` varchar(50) NOT NULL DEFAULT '',
+  `inout` varchar(50) NOT NULL DEFAULT '',
+  `timestamp` bigint(14) DEFAULT NULL,
+  `notes` varchar(250) DEFAULT NULL,
+  `ipaddress` varchar(39) NOT NULL DEFAULT '',
+  `cookie` varchar(50) NOT NULL DEFAULT '',
+  `SID` varchar(50) NOT NULL DEFAULT '',
+  KEY `fullname` (`fullname`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `punchlist` (
+  `IDPunch` int(11) NOT NULL AUTO_INCREMENT,
+  `punchitems` varchar(50) NOT NULL DEFAULT '',
+  `color` varchar(7) NOT NULL DEFAULT '',
+  `in_or_out` tinyint(1) DEFAULT NULL,
+  `absence` tinyint(4) NOT NULL DEFAULT '0',
+  `sigle` varchar(5) NOT NULL DEFAULT '',
+  `lien` varchar(35) NOT NULL DEFAULT '',
+  `horairefixe` varchar(5) NOT NULL DEFAULT '',
+  PRIMARY KEY (`IDPunch`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=66 ;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

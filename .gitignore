@@ -1,0 +1,10 @@
+
+_bd/extranetv2.sql
+/nbproject/private/
+nbproject/project.properties
+nbproject/project.xml
+caches/sessions/**
+caches/sessions/*
+caches/sessions/*.*
+caches/sessions/sess_349
+caches/sessions/sess_349

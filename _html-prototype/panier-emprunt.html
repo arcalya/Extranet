@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="images/favicon.png" rel="shortcut icon" type="image/png" />
+
+    <title>Extranet</title>
+
+    <!-- https://materialdesignicons.com/getting-started -->
+    <link href="fonts/materialdesignicons/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="fonts/roboto/roboto.min.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-3.3.6.min.css" rel="stylesheet" />
+    
+    <link href="css/daterangepicker/daterangepicker.css" rel="stylesheet">
+    
+    
+    <link href="css/fullcalendar/fullcalendar-2.6.0.min.css" rel="stylesheet">
+    <link href="css/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+  
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/print.css" rel="stylesheet" media="print" />
+
+</head>
+
+<body class="nav-md">
+    <div class="container">
+        <aside class="col-md-3">
+            <div class="navbar nav_title">
+                <a href="index.html" class="site_title"><i class="glyphicon glyphicon-send"></i> <span>Extranet</span></a>
+            </div>
+            
+            <figure class="clearfix">
+                <div class="img-circle"><img src="images/user.jpg" alt="..."></div>
+                <figcaption><span>Bienvenue,</span> <h2>Prénom Nom</h2></figcaption>
+            </figure>
+                        
+            <nav>
+                <h3>Main</h3>
+                <ul class="nav">
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Interfaces<span class="mdi mdi-chevron-down"></span></a>
+                        <ul class="nav">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="emprunt-materiel.html">Emprunts</a></li>
+                            <li><a href="table.html">Tableau</a></li>
+                            <li><a href="form.html">Formulaire</a></li>
+                            <li class="selected"><a href="liste-utilisateurs.html">Liste des utilisateurs</a></li>
+                            <li><a href="profil.html">Profil</a></li>
+                            <li><a href="liste-seances.html">Liste des séances</a></li>
+                            <li><a href="timbreuse.html">Timbreuse</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="interventions.html">Intervetions</a></li>
+                            <li><a href="messages.html">Messages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Autres<span class="mdi mdi-chevron-down"></span></a>
+                        <ul class="nav">
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <nav>
+                <h3>Configurations</h3>
+                <ul class="nav">
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Home<span class="mdi mdi-chevron-down"></span></a></li>
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Home<span class="mdi mdi-chevron-down"></span></a></li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer hidden-small">
+                <a href="" title="Configurations">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                </a>
+                <a href="" data-btn="fullscreen" title="Plein écran">
+                    <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                </a>
+                <a href="" data-btn="lock" title="Afficher toutes les rubriques">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                </a>
+                <a href="" title="Déconnexion">
+                    <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                </a>
+            </div>
+        </aside>
+        
+        
+        
+        
+        <!-- ///////////////TOP NAVIGATION////////////////////// -->
+        
+        
+        
+        
+        <header>
+            <nav class="" role="navigation">
+                <a href="" id="menu_toggle"><i class="mdi mdi-backburger"></i></a>
+
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            5D Multimédia et Communication Web <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                            <li><a href=""><i class="mdi mdi-domain"></i> IT4Net</a></li>
+                            <li><a href=""><i class="mdi mdi-domain"></i> CAPTA</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li role="presentation" class="dropdown">
+                        <a href="" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                            <i class="mdi mdi-book"></i><span class="badge bg-green">2</span>
+                        </a>
+                        <ul id="menu1" class="dropdown-menu list-unstyled msg_list animated fadeInDown" role="menu">
+                            <li>
+                                <a href="">
+                                    <span><i class="mdi mdi-book"></i></span>
+                                    <strong>Titre du livre</strong>
+                                    <em>13 mars 2016</em>
+                                    <p>Informations complémentaires au sujet de l'ouvrage.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span><i class="mdi mdi-movie"></i></span>
+                                    <strong>Titre du DVD</strong>
+                                    <em>20 mars 2016</em>
+                                    <p>Informations complémentaires au sujet de l'ouvrage.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="all">
+                                    <strong>Voir la liste des ouvrages</strong>
+                                    <i class="mdi mdi-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span><img src="images/user.jpg" alt=""></span>Prénom Nom <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                            <li><a href="">Profile</a></li>
+                            <li><a href="">Settings<span class="badge bg-red pull-right">50%</span></a></li>
+                            <li><a href="">Help</a></li> 
+                            <li><a href="login.html">Log Out<i class="mdi mdi-logout pull-right"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+
+        
+               
+ <!--////////////////////////  MAIN ////////////////////////// -->
+ 
+ 
+ 
+ 
+        <main role="main" class="users">
+            
+            <header class="clearfix">
+                <div class="title_left">
+                    <h3>Emprunt de matériel</h3>
+                </div>
+                <div class="title_right">
+                    <div class="col-md-6 col-sm-6 col-xs-12 form-group pull-right">
+                        <div class="input-group">
+                            <form class="form-inline" action="/projects/extranet-v.2/users/search" method="post">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="search" value="" placeholder="Recherche...">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-default">Go!</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+            </header>
+            
+            <div class="row panier">
+                 <div class="col-md-12">
+       
+                    <section>
+                        
+                        <header class="tools-header">  
+                         <div class="title_left">
+                    <h3>Panier d'emprunt</h3>
+               			 </div>
+                             
+                            <ul class="nav navbar-right tools-hz-bar">
+                              
+                                   <li><a class="collapse-link" href="emprunt-materiel.html"><i class="mdi mdi-arrow-left"></i> Retour à la liste</a></li>
+                                    <li><button type="submit" class="btn btn-default btn-success">Valider ! <i class="mdi mdi-share"></i></button></li>
+                            </ul>
+                        </header>  
+
+                        <p class="alert alert-success alert-display-ajax">
+                            <span></span>      
+                        </p>
+                
+                        <div class="body-section">
+                        
+                
+                            <section class="profile clearfix">
+                            
+                                <header class="tools-header">
+                                   <div class="row">
+                                 
+                                   
+                                     		<div class="col-md-6 col-sm-6 col-xs-12"> 
+                         						<li class="nom-materiel">
+                                        <strong>Pour les Nuls - : WordPress, nouvelle édition Pour les Nuls</strong><br/>
+                                        <em>Réf 8888888</em><br/>
+                                  
+                          
+                                        </li>
+                                            </div>
+                                       
+                                       <div class="col-md-6 col-sm-6 col-xs-12"> 
+                                       
+                                    <ul class="nav navbar-right tools-hz-bar">
+
+                                    
+                                         
+                                        <li class="dateemprunt">
+                                            <span class="info-number operation" title="Changer la date de retour">
+                                                <i class="mdi mdi-calendar"></i> <input type="text" name="finemprunt" value="27 03 2018" />
+                                            </span>
+                                        </li>
+                                        
+                                        <li>
+                                            <span>
+                                                <i class="mdi mdi-close"></i>
+                                            </span>    
+                                        </li>
+                            
+                                    </ul>
+                                       </div>   
+                                    </div>
+                                </header>
+                        </section>
+                        
+                            
+                            <section class="profile clearfix">
+                            
+                                <header class="tools-header">
+                                   <div class="row">
+                                    	
+                                   
+                                     		<div class="col-md-6 col-sm-6 col-xs-12">  
+                         						<li class="nom-materiel">
+                                        <strong>Casque audio Sennheiser</strong><br/>
+                                        <em>Réf 8888888</em><br/>
+                                       
+
+                                        </li>
+                                            </div>
+                                       
+                                    <div class="col-md-6 col-sm-6 col-xs-12"> 
+                                       
+                                    <ul class="nav navbar-right tools-hz-bar">
+
+                                    
+                                         
+                                        <li class="dateemprunt">
+                                            <span class="info-number operation" title="Changer la date de retour">
+                                                <i class="mdi mdi-calendar"></i> <input type="text" name="finemprunt" value="27 03 2018" />
+                                            </span>
+                                        </li>
+                                        
+                                        <li>
+                                            <span>
+                                                <i class="mdi mdi-close"></i>
+                                            </span>    
+                                        </li>
+                            
+                                    </ul>
+                                       </div>   
+                                       
+                                    </div>
+                                </header>
+                        </section>
+                            
+                          <section class="profile clearfix">
+                            
+                                <header class="tools-header">
+                                   <div class="row">
+                                  
+                                   
+                                     		<div class="col-md-6 col-sm-6 col-xs-12"> 
+                         						<li class="nom-materiel">
+                                        <strong>Casque audio Sennheiser</strong><br/>
+                                        <em>Réf 8888888</em><br/>
+                                      
+                                       
+                                        </li>
+                                            </div>
+                                       
+                                <div class="col-md-6 col-sm-6 col-xs-12"> 
+                                       
+                                    <ul class="nav navbar-right tools-hz-bar">
+
+                                    
+                                         
+                                        <li class="dateemprunt">
+                                            <span class="info-number operation" title="Changer la date de retour">
+                                                <i class="mdi mdi-calendar"></i> <input type="text" name="finemprunt" value="27 03 2018" />
+                                            </span>
+                                        </li>
+                                        
+                                        <li>
+                                            <span>
+                                                <i class="mdi mdi-close"></i>
+                                            </span>    
+                                        </li>
+                            
+                                    </ul>
+                                       </div>   
+                                       
+                                       
+                                    </div>
+                                </header>
+                        </section>
+                        
+                          <section class="profile clearfix">
+                            
+                                <header class="tools-header">
+                                   <div class="row">
+                                
+                                     		<div class="col-md-6 col-sm-6 col-xs-12"> 
+                         						<li class="nom-materiel">
+                                        <strong>Casque audio Sennheiser</strong><br/>
+                                        <em>Réf 8888888</em><br/>
+                                    
+                                     
+                                        </li>
+                                            </div>
+                                       
+                                    <div class="col-md-6 col-sm-6 col-xs-12"> 
+                                       
+                                    <ul class="nav navbar-right tools-hz-bar">
+
+                                    
+                                         
+                                        <li class="dateemprunt">
+                                            <span class="info-number operation" title="Changer la date de retour">
+                                                    <i class="mdi mdi-calendar"></i> <input type="text" name="finemprunt" value="27 03 2018" />
+                                            </span>
+                                        </li>
+                                        
+                                        <li>
+                                            <span>
+                                                <i class="mdi mdi-close"></i>
+                                            </span>    
+                                        </li>
+                            
+                                    </ul>
+                                       </div>   
+                                       
+                                       
+                                    </div>
+                                </header>
+                        </section>
+                         
+                    </div>
+                </section>
+                                       
+            </div>
+        </div>        
+        
+        
+        </main>
+
+            
+            
+            <footer>
+                <p class="pull-right"><i class="glyphicon glyphicon-send"></i> Extranet | <small><a href="https://github.com/kimlabs/gentelella" target="_blank">inspiré du Gentelella Alela Bootstrap 3 template by Kimlabs</a></small>.</p>
+            </footer>
+
+        
+        
+    
+     <!-- MODALE --> 
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        
+     
+        
+    
+    <script src="js/jquery/jquery-2.2.0.min.js"></script>
+    <script src="js/jquery/jquery-fullscreen-1.1.4.min.js"></script>
+    <script src="js/moment/moment-2.11.0.min.js"></script>
+    <script src="js/daterangepicker/daterangepicker.js"></script>
+    <script src="js/fullcalendar/fullcalendar-2.6.0.min.js"></script><!-- doc : http://fullcalendar.io/docs/ -->
+    <script src="js/fullcalendar/lang-all.js"></script>
+    <script src="js/bootstrap/bootstrap-3.3.6.min.js"></script>
+    <script src="js/scripts.js"></script>
+        
+         <script type="text/javascript">
+	$(function() {
+		$('li.dateemprunt').daterangepicker({
+			singleDatePicker: true,
+			showDropdowns: true
+		});
+		$('li.dateemprunt').on('apply.daterangepicker', function(ev, picker) {
+			
+			/*
+			  console.log(picker.startDate.format('YYYY-MM-DD'));
+			  console.log(picker.endDate.format('YYYY-MM-DD'));
+			  
+			  console.log($(this));
+			  console.log($(this).find('input[name="finemprunt"]'));
+			  $('input[name="finemprunt"]').show();
+			  $('input[name="finemprunt"]').val('test');
+			*/
+			$(this).find('input[name="finemprunt"]').show();
+			$(this).find('input[name="finemprunt"]').val(picker.endDate.format('DD MM YYYY'));
+		});
+	});
+	</script>
+        
+    
+  </body>
+</html>

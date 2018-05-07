@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="images/favicon.png" rel="shortcut icon" type="image/png" />
+
+    <title>Extranet</title>
+
+    <!-- https://materialdesignicons.com/getting-started -->
+    <link href="fonts/materialdesignicons/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="fonts/roboto/roboto.min.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-3.3.6.min.css" rel="stylesheet" />
+    
+    <link href="css/daterangepicker/daterangepicker.css" rel="stylesheet">
+    
+    
+    <link href="css/fullcalendar/fullcalendar-2.6.0.min.css" rel="stylesheet">
+    <link href="css/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+  
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/print.css" rel="stylesheet" media="print" />
+
+</head>
+
+<body class="nav-md">
+    <div class="container">
+        <aside class="col-md-3">
+            <div class="navbar nav_title">
+                <a href="index.html" class="site_title"><i class="glyphicon glyphicon-send"></i> <span>Extranet</span></a>
+            </div>
+            
+            <figure class="clearfix">
+                <div class="img-circle"><img src="images/user.jpg" alt="..."></div>
+                <figcaption><span>Bienvenue,</span> <h2>Prénom Nom</h2></figcaption>
+            </figure>
+                        
+            <nav>
+                <h3>Main</h3>
+                <ul class="nav">
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Interfaces<span class="mdi mdi-chevron-down"></span></a>
+                        <ul class="nav">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li class="selected"><a href="emprunt-materiel.html">Emprunts</a></li>
+                            <li><a href="table.html">Tableau</a></li>
+                            <li><a href="form.html">Formulaire</a></li>
+                            <li><a href="liste-utilisateurs.html">Liste des utilisateurs</a></li>
+                            <li><a href="profil.html">Profil</a></li>
+                            <li><a href="liste-seances.html">Liste des séances</a></li>
+                            <li><a href="timbreuse.html">Timbreuse</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="interventions.html">Intervetions</a></li>
+                            <li><a href="messages.html">Messages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Autres<span class="mdi mdi-chevron-down"></span></a>
+                        <ul class="nav">
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <nav>
+                <h3>Configurations</h3>
+                <ul class="nav">
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Home<span class="mdi mdi-chevron-down"></span></a></li>
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Home<span class="mdi mdi-chevron-down"></span></a></li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer hidden-small">
+                <a href="" title="Configurations">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                </a>
+                <a href="" data-btn="fullscreen" title="Plein écran">
+                    <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                </a>
+                <a href="" data-btn="lock" title="Afficher toutes les rubriques">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                </a>
+                <a href="" title="Déconnexion">
+                    <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                </a>
+            </div>
+        </aside>
+        
+        
+        
+        
+        <!-- ///////////////TOP NAVIGATION////////////////////// -->
+        
+        
+        
+        
+        <header>
+            <nav class="" role="navigation">
+                <a href="" id="menu_toggle"><i class="mdi mdi-backburger"></i></a>
+
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            5D Multimédia et Communication Web <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                            <li><a href=""><i class="mdi mdi-domain"></i> IT4Net</a></li>
+                            <li><a href=""><i class="mdi mdi-domain"></i> CAPTA</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li role="presentation" class="dropdown">
+                        <a href="" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                            <i class="mdi mdi-book"></i><span class="badge bg-green">2</span>
+                        </a>
+                        <ul id="menu1" class="dropdown-menu list-unstyled msg_list animated fadeInDown" role="menu">
+                            <li>
+                                <a href="">
+                                    <span><i class="mdi mdi-book"></i></span>
+                                    <strong>Titre du livre</strong>
+                                    <em>13 mars 2016</em>
+                                    <p>Informations complémentaires au sujet de l'ouvrage.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span><i class="mdi mdi-movie"></i></span>
+                                    <strong>Titre du DVD</strong>
+                                    <em>20 mars 2016</em>
+                                    <p>Informations complémentaires au sujet de l'ouvrage.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="all">
+                                    <strong>Voir la liste des ouvrages</strong>
+                                    <i class="mdi mdi-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span><img src="images/user.jpg" alt=""></span>Prénom Nom <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                            <li><a href="">Profile</a></li>
+                            <li><a href="">Settings<span class="badge bg-red pull-right">50%</span></a></li>
+                            <li><a href="">Help</a></li> 
+                            <li><a href="login.html">Log Out<i class="mdi mdi-logout pull-right"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+
+        
+               
+ <!--////////////////////////  MAIN ////////////////////////// -->
+ 
+ 
+ 
+ 
+        <main role="main">
+            
+            <header class="clearfix">
+                <div class="title_left">
+                    <h3>Emprunt de matériel</h3>
+                </div>
+                <div class="title_right">
+                    <div class="col-md-6 col-sm-6 col-xs-12 form-group pull-right">
+                        
+                    </div>
+            </div>
+            </header>
+            
+            <div class="row">
+                 <div class="col-md-12">
+       
+                    <section>
+                        
+                        <header class="tools-header">  
+                            <div class="col-md-12">
+                                <form class="form-inline" action="/projects/extranet-v.2/users/search" method="post">
+                                    
+                                    <div class="input-group">
+                                            <input type="text" class="form-control" name="titre" value="" placeholder="Titre/Code">
+                                       </div>
+                                    
+                                        <div class="form-group">
+                                            <select class="form-control input-small" name="theme">
+                                                <option>Tous les thèmes</option>
+                                                <option>Participants</option>
+                                                <option>Thème 1</option>
+                                                <option>Thème 2</option>
+                                                <option>Thème 3</option>
+                                            </select>
+                                        </div>
+
+                                    
+                                   <button type="submit" class="btn btn-default">Go!</button>         
+                                   
+                                    
+                            </form>
+                                <ul class="nav navbar-right tools-hz-bar">
+                                   <li><a class="collapse-link" href="file:///C:/Users/5dseel/OneDrive/Documents/Cours%205d/Extranet-v2/_html-prototype/panier-emprunt.html"><i class="mdi mdi-basket"></i><span class="badge bg-info">2</span></a></li>
+                                   <li><a class="collapse-link" href="/projects/extranet-v.2/users/beneficiaireform/"><i class="mdi mdi-plus"></i> Ajouter un article</a></li>
+                                </ul>
+                            </div>
+
+                            
+                        </header>  
+
+                        <p class="alert alert-success alert-display-ajax">
+                            <span></span>      
+                        </p>
+                
+                        <div class="body-section">
+                        
+                        <section class="cell-h1">
+                                                <th colspan="3">Sujet 1</th>
+                                          
+                        </section>
+                            
+                            
+                            <section class="profile clearfix">
+                            
+                                <header class="tools-header">
+                                   <div class="row">
+                                    	<div class="col-md-4 col-sm-4 col-xs-12"> 
+                                    		<h2>Pour les Nuls - : WordPress, nouvelle édition Pour les Nuls</h2><br />
+                                    		<p>Lisa Sabin-Wilson</p>
+                                            <p>Livre</p>
+                                        </div>
+                                   
+                                     		<div class="col-md-3 col-sm-3 col-xs-12">   
+                         						<strong>Disponible</strong> <br />
+                                                <small>Emprunté x fois</small>
+                                            </div>
+                                         <div class="col-md-2 col-sm-2 col-xs-12">   
+                                                          <div id="stars" class="starrr lead"><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></div> 
+                                                </div>
+                                      
+                                                   <ul class="nav navbar-right tools-hz-bar">
+
+
+
+                                                  <!--  <li class="dateemprunt">
+                                                        <span class="info-number operation" title="Est présent depuis 2 heures">
+                                                            <i class="mdi mdi-calendar-check success"></i> <input type="text" name="finemprunt" value="" />
+                                                        </span>
+                                                    </li> -->
+                                                       
+                                                    <li>
+                                                        <a class="info-number operation" href="#"><i class="mdi mdi-checkbox-blank-outline"></i></a>
+                                                    </li>
+                                                       
+                                                     <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="mdi mdi-wrench"></i></a>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li><a href="/projects/extranet-v.2/users/beneficiaireform/2377">Modifier</a></li>
+                                                            <li><a data-toggle="modal" data-target="#delete" data-action="delete" data-url="/projects/extranet-v.2//users/beneficiaireform/2377" href="">Supprimer</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a class="collapse-link"><i class="mdi mdi-chevron-up"></i></a></li>
+                                            </ul>
+                                    </div>
+                                        
+                                        
+                                    
+                                    	
+                                </header>
+
+                            <div class="minified">
+                                    <div class="col-md-4 col-sm-9 col-xs-12">
+                                        <img src="images/nuls.jpg" alt="image d'un article" width="100%">
+                                                 
+                                    </div>
+    
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                    
+                                  
+                                         <li class="nom-materiel">
+                                        <em>Réf 8888888</em>
+                                        <p>Résponsable: Jon Doe</p>
+                                        <p>Informations complémentaires au sujet de l'ouvrage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa dolor, vulputate at lobortis mattis, dignissim sit amet orci. Pellentesque suscipit, magna sit amet posuere pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa dolor, vulputate at lobortis mattis, dignissim sit amet orci. Pellentesque suscipit, magna sit amet posuere pulvinar. </p>
+                                        </li>
+                                    </div>
+                                
+                                     <div class="col-md-4 col-sm-9 col-xs-12 avis">
+                                         <h2 >Avis</h2>
+                                                  <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div> 
+
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                         
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                         
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                         
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                                                                  
+
+                                                </div>
+                                
+                                <!-- <div class="row">
+                                           
+                                            </div> -->
+                            </div>
+                            
+                        </section>
+                        
+                        
+                          <section class="profile clearfix">
+                            
+                                <header class="tools-header choice">
+                                   <div class="row">
+                                    	<div class="col-md-4 col-sm-4 col-xs-12"> 
+                                    		<h2>DRUPAL - Réalisez des développements professionnels avec PHP (2ième édition)</h2><br />
+                                    		<p>David OLMETA</p>
+                                            <p>Livre</p>
+                                        </div>
+                                   
+                                     		<div class="col-md-3 col-sm-3 col-xs-12">   
+                         						<strong>Disponible</strong> <br />
+                                                <small>Emprunté x fois</small>
+                                            </div>
+                                         <div class="col-md-2 col-sm-2 col-xs-12">   
+                                                          <div id="stars" class="starrr lead"><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></div> 
+                                                </div>
+                                      
+                                                   <ul class="nav navbar-right tools-hz-bar">
+
+
+
+                                                  <!--  <li class="dateemprunt">
+                                                        <span class="info-number operation" title="Est présent depuis 2 heures">
+                                                            <i class="mdi mdi-calendar-check success"></i> <input type="text" name="finemprunt" value="" />
+                                                        </span>
+                                                    </li> -->
+                                                       
+                                                    <li>
+                                                        <a class="info-number operation" href="#"><i class="mdi mdi-checkbox-marked"></i></a>
+                                                    </li>
+                                                       
+                                                     <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="mdi mdi-wrench"></i></a>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li><a href="/projects/extranet-v.2/users/beneficiaireform/2377">Modifier</a></li>
+                                                            <li><a data-toggle="modal" data-target="#delete" data-action="delete" data-url="/projects/extranet-v.2//users/beneficiaireform/2377" href="">Supprimer</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a class="collapse-link"><i class="mdi mdi-chevron-up"></i></a></li>
+                                            </ul>
+                                    </div>
+                                        
+                                        
+                                    
+                                    	
+                                </header>
+
+                            <div class="minified">
+                                    <div class="col-md-4 col-sm-9 col-xs-12">
+                                        <img src="images/drupal.jpg" alt="image d'un article" width="100%">
+                                                 
+                                    </div>
+    
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                    
+                                  
+                                         <li class="nom-materiel">
+                                        <em>Réf 8899855</em>
+                                        <p>Résponsable: Jon Doe</p>
+                                        <p>Informations complémentaires au sujet de l'ouvrage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa dolor, vulputate at lobortis mattis, dignissim sit amet orci. Pellentesque suscipit, magna sit amet posuere pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa dolor, vulputate at lobortis mattis, dignissim sit amet orci. Pellentesque suscipit, magna sit amet posuere pulvinar. </p>
+                                        </li>
+                                    </div>
+                                
+                                     <div class="col-md-4 col-sm-9 col-xs-12 avis">
+                                         <h2 >Avis</h2>
+                                                  <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div> 
+
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                         
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                         
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                         
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                                                                  
+
+                                                </div>
+                                
+                                <!-- <div class="row">
+                                           
+                                            </div> -->
+                            </div>
+                            
+                        </section>    
+                        
+                        
+                      
+                        
+                           <section class="cell-h1">
+                                                <th colspan="3">Sujet 2 </th>
+
+                           </section>  
+                            
+                          <section class="profile clearfix">
+                            
+                                <header class="tools-header">
+                                   <div class="row">
+                                    	<div class="col-md-4 col-sm-4 col-xs-12"> 
+                                    		<h2>Nom du casque audio</h2><br />
+                                            <p>Sony</p>
+                                            <p>Accessoire</p>
+                                        </div>
+                                   
+
+                                           <div class="col-md-3 col-sm-3 col-xs-12 emprunte">   
+                                                    <strong>Emprunté par Edwina Berisha</strong><br />
+                                                    <small>Du 1 janvier 2016 au 31 mars 2016</small><br />
+                                              <button type="submit" class="btn btn-default"><i class="mdi mdi-rotate-left"></i> Retourner</button>
+                                            </div>
+                                       
+                                               <div class="col-md-2 col-sm-2 col-xs-12">   
+                                                          <div id="stars" class="starrr lead"><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></div> 
+                                                </div>
+
+                                                    <ul class="nav navbar-right tools-hz-bar">
+                                                    
+                                                    
+
+                                                   
+                                             <!--       <li data-toggle="modal" data-target="#myModal">
+                                                        <span class="info-number operation" title="Est présent depuis 2 heures">
+                                                            <i class="mdi mdi-calendar-check success"></i>
+                                                        </span>
+                                                    </li> -->
+                                                    
+                                                    <li>
+                                                        <a class="info-number operation" href="#"><i class="mdi mdi-checkbox-blank-outline"></i></a>
+                                                    </li>
+                                                        
+                                                     <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="mdi mdi-wrench"></i></a>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li><a href="/projects/extranet-v.2/users/beneficiaireform/2377">Modifier</a></li>
+                                                            <li><a data-toggle="modal" data-target="#delete" data-action="delete" data-url="/projects/extranet-v.2//users/beneficiaireform/2377" href="">Supprimer</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a class="collapse-link"><i class="mdi mdi-chevron-up"></i></a></li>
+                                                </ul>
+                                       
+                                    </div>
+                                        
+                                        
+                                    
+                               
+                                </header>
+                                <div class="minified">
+                                    <div class="col-md-4 col-sm-9 col-xs-12">
+                                        <img src="images/casque1.jpg" alt="image d'un article" width="100%">
+                                                 
+                                    </div>
+    
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                    
+                                  
+                                         <li class="nom-materiel">
+                                        <em>Réf 8888888</em>
+                                        <p>Résponsable: Jon Doe</p>
+                                        <p>Informations complémentaires au sujet de l'ouvrage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa dolor, vulputate at lobortis mattis, dignissim sit amet orci. Pellentesque suscipit, magna sit amet posuere pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa dolor, vulputate at lobortis mattis, dignissim sit amet orci. Pellentesque suscipit, magna sit amet posuere pulvinar. </p>
+                                        </li>
+                                    </div>
+                                
+                                     <div class="col-md-4 col-sm-9 col-xs-12 avis">
+                                         <h2 >Avis</h2>
+                                                  <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div> 
+
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                         
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                         
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                         
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                                                                  
+
+                                                </div>
+                                
+                                <!-- <div class="row">
+                                           
+                                            </div> -->
+                            </div>
+                            
+                        </section>
+                            
+                        
+                        
+                         <section class="profile clearfix">
+                            
+                                <header class="tools-header">
+                                   <div class="row">
+                                    	<div class="col-md-4 col-sm-4 col-xs-12"> 
+                                    		<h2>Nom du casque audio</h2><br />
+                                            <p>Sony</p>
+                                            <p>Accessoire</p>
+                                        </div>
+                                   
+
+                                           <div class="col-md-3 col-sm-3 col-xs-12">   
+                                                    <strong>Disponible</strong>   <br />
+                                                    <small>Emprunté x fois</small>
+                                                    
+                                            </div>
+                                       
+                                               <div class="col-md-2 col-sm-2 col-xs-12">   
+                                                          <div id="stars" class="starrr lead"><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></div> 
+                                                </div>
+
+                                                    <ul class="nav navbar-right tools-hz-bar">
+                                                    
+                                                    
+
+                                                   
+                                             <!--       <li data-toggle="modal" data-target="#myModal">
+                                                        <span class="info-number operation" title="Est présent depuis 2 heures">
+                                                            <i class="mdi mdi-calendar-check success"></i>
+                                                        </span>
+                                                    </li> -->
+                                                    
+                                                    <li>
+                                                        <a class="info-number operation" href="#"><i class="mdi mdi-checkbox-blank-outline"></i></a>
+                                                    </li>
+                                                        
+                                                     <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="mdi mdi-wrench"></i></a>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li><a href="/projects/extranet-v.2/users/beneficiaireform/2377">Modifier</a></li>
+                                                            <li><a data-toggle="modal" data-target="#delete" data-action="delete" data-url="/projects/extranet-v.2//users/beneficiaireform/2377" href="">Supprimer</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a class="collapse-link"><i class="mdi mdi-chevron-up"></i></a></li>
+                                                </ul>
+                                       
+                                    </div>
+                                        
+                                        
+                                    
+                               
+                                </header>
+                                <div class="minified">
+                                    <div class="col-md-4 col-sm-9 col-xs-12">
+                                        <img src="images/casque1.jpg" alt="image d'un article" width="100%">
+                                                 
+                                    </div>
+    
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                    
+                                  
+                                         <li class="nom-materiel">
+                                        <em>Réf 8888888</em>
+                                        <p>Résponsable: Jon Doe</p>
+                                        <p>Informations complémentaires au sujet de l'ouvrage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa dolor, vulputate at lobortis mattis, dignissim sit amet orci. Pellentesque suscipit, magna sit amet posuere pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa dolor, vulputate at lobortis mattis, dignissim sit amet orci. Pellentesque suscipit, magna sit amet posuere pulvinar. </p>
+                                        </li>
+                                    </div>
+                                
+                                     <div class="col-md-4 col-sm-9 col-xs-12 avis">
+                                         <h2 >Avis</h2>
+                                                  <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div> 
+
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                         
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                         
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                         
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                                                                  
+
+                                                </div>
+                                
+                                <!-- <div class="row">
+                                           
+                                            </div> -->
+                            </div>
+                            
+                        </section>
+                        
+                        
+                            
+                        <section class="cell-h1">
+                                                <th colspan="3">Sujet 3 </th>
+                                              
+                        </section>                 
+                              
+                       <section class="profile clearfix">
+                            
+                                <header class="tools-header">
+                                   <div class="row">
+                                    	<div class="col-md-4 col-sm-4 col-xs-12"> 
+                                    		<h2>Apprendre Wordpress 3.4</h2><br />
+                                            <p>Olivier Gobet</p>
+                                            <p>DVD</p>
+                                        </div>
+                                   
+
+                                           <div class="col-md-3 col-sm-3 col-xs-12 retard">   
+                                                    <strong>Emprunté par Edwina Berisha</strong><br />
+                                                    <small>Du 1 janvier 2016 au 31 mars 2016</small><span class="badge bg-danger">2</span><br />
+                                              <button type="submit" class="btn btn-default">Rendu</button>
+
+                                       </div>
+                                       
+                                               <div class="col-md-2 col-sm-2 col-xs-12">   
+                                                          <div id="stars" class="starrr lead"><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></div> 
+                                                </div>
+
+                                                    <ul class="nav navbar-right tools-hz-bar">
+                                                    
+                                                    
+
+                                                   
+                                               <!--     <li data-toggle="modal" data-target="#myModal">
+                                                        <span class="info-number operation" title="Est présent depuis 2 heures">
+                                                            <i class="mdi mdi-calendar-check success"></i>
+                                                        </span>
+                                                    </li>  -->
+                                                        
+                                                    <li>
+                                                        <a class="info-number operation" href="#"><i class="mdi mdi-checkbox-blank-outline"></i></a>
+                                                    </li>
+                                                     <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="mdi mdi-wrench"></i></a>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li><a href="/projects/extranet-v.2/users/beneficiaireform/2377">Modifier</a></li>
+                                                            <li><a data-toggle="modal" data-target="#delete" data-action="delete" data-url="/projects/extranet-v.2//users/beneficiaireform/2377" href="">Supprimer</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a class="collapse-link"><i class="mdi mdi-chevron-up"></i></a></li>
+                                                </ul>
+                                       
+                                    </div>
+                                        
+                                        
+                                    
+                               
+                                </header>
+
+                          <div class="minified">
+                                    <div class="col-md-4 col-sm-9 col-xs-12">
+                                        <img src="images/wordpress1.jpg" alt="image d'un article" width="100%">
+                                                 
+                                    </div>
+    
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                    
+                                  
+                                         <li class="nom-materiel">
+                                        <em>Réf 8888888</em>
+                                        <p>Résponsable: Jon Doe</p>
+                                        <p>Informations complémentaires au sujet de l'ouvrage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa dolor, vulputate at lobortis mattis, dignissim sit amet orci. Pellentesque suscipit, magna sit amet posuere pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa dolor, vulputate at lobortis mattis, dignissim sit amet orci. Pellentesque suscipit, magna sit amet posuere pulvinar. </p>
+                                        </li>
+                                    </div>
+                                
+                                     <div class="col-md-4 col-sm-9 col-xs-12 avis">
+                                         <h2 >Avis</h2>
+                                                  <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div> 
+
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                         
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                         
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                         
+                                                 <div id="stars" class="starrr lead"><span>Nom: <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span></span></div>
+                                                                                  
+
+                                                </div>
+                                
+                                <!-- <div class="row">
+                                           
+                                            </div> -->
+                            </div>
+                            
+                        </section>
+                             
+                            
+                            
+                    </div>
+                </section>
+                                       
+            </div>
+        </div>        
+        
+        
+        </main>
+
+            
+            
+            <footer>
+                <p class="pull-right"><i class="glyphicon glyphicon-send"></i> Extranet | <small><a href="https://github.com/kimlabs/gentelella" target="_blank">inspiré du Gentelella Alela Bootstrap 3 template by Kimlabs</a></small>.</p>
+            </footer>
+
+        
+        
+    </div>
+     <!-- MODALE --> 
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Calendrier</h4>
+      </div>
+      <div class="modal-body">
+      <!-- copié du html de base
+      <div class="daterangepicker dropdown-menu opensleft show-calendar" style="top: 240px; right: 63.0781px; left: auto; display: block;"><div class="calendar first left">
+      <div class="calendar-date">
+      <table class="table-condensed">
+      <thead>
+      <tr>
+      <th>
+      </th>
+      <th class="prev available">
+      <i class="fa fa-arrow-left icon icon-arrow-left glyphicon glyphicon-arrow-left">
+      </i>
+      </th>
+      <th colspan="5" class="month">
+      <select class="monthselect">
+      <option value="0">January</option>
+      <option value="1">February</option>
+      <option value="2">March</option>
+      <option value="3">April</option>
+      <option value="4">May</option>
+      <option value="5">June</option>
+      <option value="6">July</option>
+      <option value="7">August</option>
+      <option value="8">September</option>
+      <option value="9" selected="selected">October</option>
+      <option value="10">November</option>
+      <option value="11">December</option>
+      </select>
+      <select class="yearselect">
+      <option value="2012">2012</option>
+      <option value="2013">2013</option>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+      </select>
+      </th>
+      <th>
+      </th>
+      </tr>
+      <tr>
+      <th class="week">W</th>
+      <th>Mo</th>
+      <th>Tu</th>
+      <th>We</th>
+      <th>Th</th>
+      <th>Fr</th>
+      <th>Sa</th>
+      <th>Su</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td class="week">40</td>
+      <td class="off disabled" data-title="r0c0">26</td>
+      <td class="off disabled" data-title="r0c1">27</td>
+      <td class="off disabled" data-title="r0c2">28</td>
+      <td class="off disabled" data-title="r0c3">29</td>
+      <td class="off disabled" data-title="r0c4">30</td>
+      <td class="off disabled" data-title="r0c5">1</td>
+      <td class="off disabled" data-title="r0c6">2</td>
+      </tr>
+      <tr>
+      <td class="week">41</td>
+      <td class="off disabled" data-title="r1c0">3</td>
+      <td class="off disabled" data-title="r1c1">4</td>
+      <td class="off disabled" data-title="r1c2">5</td>
+      <td class="off disabled" data-title="r1c3">6</td>
+      <td class="off disabled" data-title="r1c4">7</td>
+      <td class="off disabled" data-title="r1c5">8</td>
+      <td class="off disabled" data-title="r1c6">9</td>
+      </tr>
+      <tr>
+      <td class="week">42</td>
+      <td class="off disabled" data-title="r2c0">10</td>
+      <td class="off disabled" data-title="r2c1">11</td>
+      <td class="off disabled" data-title="r2c2">12</td>
+      <td class="off disabled" data-title="r2c3">13</td>
+      <td class="off disabled" data-title="r2c4">14</td>
+      <td class="off disabled" data-title="r2c5">15</td>
+      <td class="off disabled" data-title="r2c6">16</td>
+      </tr>
+      <tr>
+      <td class="week">43</td>
+      <td class="off disabled" data-title="r3c0">17</td>
+      <td class="off disabled" data-title="r3c1">18</td>
+      <td class="off disabled" data-title="r3c2">19</td>
+      <td class="off disabled" data-title="r3c3">20</td>
+      <td class="off disabled" data-title="r3c4">21</td>
+      <td class="off disabled" data-title="r3c5">22</td>
+      <td class="off disabled" data-title="r3c6">23</td>
+      </tr>
+      <tr>
+      <td class="week">44</td>
+      <td class="off disabled" data-title="r4c0">24</td>
+      <td class="off disabled" data-title="r4c1">25</td>
+      <td class="off disabled" data-title="r4c2">26</td>
+      <td class="off disabled" data-title="r4c3">27</td>
+      <td class="off disabled" data-title="r4c4">28</td>
+      <td class="off disabled" data-title="r4c5">29</td>
+      <td class="off disabled" data-title="r4c6">30</td>
+      </tr>
+      <tr>
+      <td class="week">45</td>
+      <td class="off disabled" data-title="r5c0">31</td>
+      <td class="off disabled" data-title="r5c1">1</td>
+      <td class="off disabled" data-title="r5c2">2</td>
+      <td class="off disabled" data-title="r5c3">3</td>
+      <td class="off disabled" data-title="r5c4">4</td>
+      <td class="off disabled" data-title="r5c5">5</td>
+      <td class="off disabled" data-title="r5c6">6</td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
+      </div>
+      <div class="calendar second right">
+      <div class="calendar-date">
+      <table class="table-condensed">
+      <thead><tr>
+      <th></th>
+      <th class="prev available">
+      <i class="fa fa-arrow-left icon icon-arrow-left glyphicon glyphicon-arrow-left">
+      </i>
+      </th>
+      <th colspan="5" class="month">
+      <select class="monthselect">
+      <option value="9">October</option>
+      <option value="10" selected="selected">November</option>
+      <option value="11">December</option>
+      </select>
+      <select class="yearselect">
+      </select>
+      </th>
+      <th>
+      </th>
+      </tr>
+      <tr>
+      <th class="week">W</th>
+      <th>Mo</th>
+      <th>Tu</th>
+      <th>We</th>
+      <th>Th</th>
+      <th>Fr</th>
+      <th>Sa</th>
+      <th>Su</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td class="week">45</td>
+      <td class="off disabled" data-title="r0c0">31</td>
+      <td class="off disabled" data-title="r0c1">1</td>
+      <td class="off disabled" data-title="r0c2">2</td>
+      <td class="off disabled" data-title="r0c3">3</td>
+      <td class="off disabled" data-title="r0c4">4</td>
+      <td class="off disabled" data-title="r0c5">5</td>
+      <td class="off disabled" data-title="r0c6">6</td>
+      </tr>
+      <tr>
+      <td class="week">46</td>
+      <td class="off disabled" data-title="r1c0">7</td>
+      <td class="off disabled" data-title="r1c1">8</td>
+      <td class="off disabled" data-title="r1c2">9</td>
+      <td class="off disabled" data-title="r1c3">10</td>
+      <td class="off disabled" data-title="r1c4">11</td>
+      <td class="off disabled" data-title="r1c5">12</td>
+      <td class="off disabled" data-title="r1c6">13</td>
+      </tr>
+      <tr>
+      <td class="week">47</td>
+      <td class="off disabled" data-title="r2c0">14</td>
+      <td class="off disabled" data-title="r2c1">15</td>
+      <td class="off disabled" data-title="r2c2">16</td>
+      <td class="off disabled" data-title="r2c3">17</td>
+      <td class="off disabled" data-title="r2c4">18</td>
+      <td class="off disabled" data-title="r2c5">19</td>
+      <td class="off disabled" data-title="r2c6">20</td>
+      </tr><tr>
+      <td class="week">48</td>
+      <td class="off disabled" data-title="r3c0">21</td>
+      <td class="off disabled" data-title="r3c1">22</td>
+      <td class="off disabled" data-title="r3c2">23</td>
+      <td class="off disabled" data-title="r3c3">24</td>
+      <td class="off disabled" data-title="r3c4">25</td>
+      <td class="off disabled" data-title="r3c5">26</td>
+      <td class="off disabled" data-title="r3c6">27</td>
+      </tr>
+      <tr>
+      <td class="week">49</td>
+      <td class="off disabled" data-title="r4c0">28</td>
+      <td class="off disabled" data-title="r4c1">29</td>
+      <td class="off disabled" data-title="r4c2">30</td>
+      <td class="off disabled" data-title="r4c3">1</td>
+      <td class="off disabled" data-title="r4c4">2</td>
+      <td class="off disabled" data-title="r4c5">3</td>
+      <td class="off disabled" data-title="r4c6">4</td>
+      </tr>
+      <tr>
+      <td class="week">50</td>
+      <td class="off disabled" data-title="r5c0">5</td>
+      <td class="off disabled" data-title="r5c1">6</td>
+      <td class="off disabled" data-title="r5c2">7</td>
+      <td class="off disabled" data-title="r5c3">8</td>
+      <td class="off disabled" data-title="r5c4">9</td>
+      <td class="off disabled" data-title="r5c5">10</td>
+      <td class="off disabled" data-title="r5c6">11</td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
+      </div>
+      <div class="ranges">
+      <ul>
+      <li class="active">Custom</li>
+      </ul>
+      <div class="range_inputs">
+      <div class="daterangepicker_start_input">
+      <label for="daterangepicker_start">From</label>
+      <input class="input-mini" type="text" name="daterangepicker_start" value="">
+      </div>
+      <div class="daterangepicker_end_input">
+      <label for="daterangepicker_end">To</label>
+      <input class="input-mini" type="text" name="daterangepicker_end" value="">
+      </div>
+      <button class="applyBtn btn btn-default btn-small btn-primary">Submit</button>&nbsp;<button class="cancelBtn btn btn-default btn-small">Clear</button>
+      </div>
+      </div>
+      </div> -->
+ <!-- copié du html de base -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <script src="js/jquery/jquery-2.2.0.min.js"></script>
+    <script src="js/jquery/jquery-fullscreen-1.1.4.min.js"></script>
+    <script src="js/moment/moment-2.11.0.min.js"></script>
+    <script src="js/daterangepicker/daterangepicker.js"></script>
+    <script src="js/fullcalendar/fullcalendar-2.6.0.min.js"></script><!-- doc : http://fullcalendar.io/docs/ -->
+    <script src="js/fullcalendar/lang-all.js"></script>
+    <script src="js/bootstrap/bootstrap-3.3.6.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+	$(function() {
+		$('li.dateemprunt').daterangepicker({
+			singleDatePicker: true,
+			showDropdowns: true
+		});
+		$('li.dateemprunt').on('apply.daterangepicker', function(ev, picker) {
+			
+			/*
+			  console.log(picker.startDate.format('YYYY-MM-DD'));
+			  console.log(picker.endDate.format('YYYY-MM-DD'));
+			  
+			  console.log($(this));
+			  console.log($(this).find('input[name="finemprunt"]'));
+			  $('input[name="finemprunt"]').show();
+			  $('input[name="finemprunt"]').val('test');
+			*/
+			$(this).find('input[name="finemprunt"]').show();
+			$(this).find('input[name="finemprunt"]').val(picker.endDate.format('DD MM YYYY'));
+		});
+	});
+	</script>
+    
+  </body>
+</html>

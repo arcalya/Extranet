@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<translations language="en">
+	<!--
+	This file should contain all the default translations.
+	When a module is looking for a translation that its Lang object cannot find
+	in the currently selected language, neighter in the default language translation,
+	the Lang object will look for a translation in the directory 'cms/languages'.
+	First, for the currently selected language, and then, for the default language.
+	-->
+	<labels>
+            <pageHeadTitle>Website</pageHeadTitle>
+            <page404>Unknown page</page404>
+            
+            <years>years</years>
+            <year>year</year>
+            <months>months</months>
+            <month>month</month>
+            <days>days</days>
+            <day>day</day>
+            <hours>hours</hours>
+            <hour>hour</hour>
+            <minutes>minutes</minutes>
+            <minute>minute</minute>
+            <seconds>seconds</seconds>
+            <second>second</second>
+            <now>Right now</now>
+            
+            <monday>monday</monday>
+            <tuesday>tuesday</tuesday>
+            <wednesday>wednesday</wednesday>
+            <thursday>thursday</thursday>
+            <friday>friday</friday>
+            <saturday>saturday</saturday>
+            <sunday>sunday</sunday>
+            
+            <january>january</january>
+            <february>febuary</february>
+            <march>march</march>
+            <april>april</april>
+            <may>may</may>
+            <june>june</june>
+            <july>july</july>
+            <august>august</august>
+            <september>september</september>
+            <october>october</october>
+            <november>november</november>
+            <december>december</december>
+            
+            <jan>jan.</jan>
+            <feb>feb.</feb>
+            <mar>march</mar>
+            <apr>avpil</apr>
+            <ma>may</ma>
+            <jun>june</jun>
+            <jul>july</jul>
+            <aug>aug.</aug>
+            <sept>sept.</sept>
+            <oct>oct.</oct>
+            <nov>nov.</nov>
+            <dec>dec.</dec>
+            
+            <st>st</st>
+            <nd>nd</nd>
+            <rd>rd</rd>
+            <th>th</th>
+            
+                <more>More...</more>
+                <less>Less...</less>
+                <close>Close...</close>
+            
+            
+            <result>result</result>
+            <results>results</results>
+            <to>to</to>
+            
+            
+            <pagenotfound>Unknown page !</pagenotfound>
+            <pagedidnotfound>The page has not been found.</pagedidnotfound>
+            <pagedoesntexist>The page you are looking for does not exist.</pagedoesntexist>
+            <pageitcould>It could be that :</pageitcould>
+            <pagecontainserror>the address contains errors.</pagecontainserror>
+            <pagelinknotuptodate>the link that conduct to this page is not up to date.</pagelinknotuptodate>
+            <pagesuggest>We could suggest to you to </pagesuggest>
+            <pagebacktohom>go back to the homepage</pagebacktohom>
+	</labels>
+	<texts>
+		<text_name>text translation</text_name>
+	</texts>
+</translations>

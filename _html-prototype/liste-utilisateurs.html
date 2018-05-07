@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="images/favicon.png" rel="shortcut icon" type="image/png" />
+
+    <title>Extranet</title>
+
+    <!-- https://materialdesignicons.com/getting-started -->
+    <link href="fonts/materialdesignicons/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="fonts/roboto/roboto.min.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-3.3.6.min.css" rel="stylesheet" />
+    
+    <link href="css/daterangepicker/daterangepicker.css" rel="stylesheet">
+    
+    
+    <link href="css/fullcalendar/fullcalendar-2.6.0.min.css" rel="stylesheet">
+    <link href="css/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+  
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/print.css" rel="stylesheet" media="print" />
+
+</head>
+
+<body class="nav-md">
+    <div class="container">
+        <aside class="col-md-3">
+            <div class="navbar nav_title">
+                <a href="index.html" class="site_title"><i class="glyphicon glyphicon-send"></i> <span>Extranet</span></a>
+            </div>
+            
+            <figure class="clearfix">
+                <div class="img-circle"><img src="images/user.jpg" alt="..."></div>
+                <figcaption><span>Bienvenue,</span> <h2>Prénom Nom</h2></figcaption>
+            </figure>
+                        
+            <nav>
+                <h3>Main</h3>
+                <ul class="nav">
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Interfaces<span class="mdi mdi-chevron-down"></span></a>
+                        <ul class="nav">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="emprunt-materiel.html">Emprunts</a></li>
+                            <li><a href="table.html">Tableau</a></li>
+                            <li><a href="form.html">Formulaire</a></li>
+                            <li class="selected"><a href="liste-utilisateurs.html">Liste des utilisateurs</a></li>
+                            <li><a href="profil.html">Profil</a></li>
+                            <li><a href="liste-seances.html">Liste des séances</a></li>
+                            <li><a href="timbreuse.html">Timbreuse</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="interventions.html">Intervetions</a></li>
+                            <li><a href="messages.html">Messages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Autres<span class="mdi mdi-chevron-down"></span></a>
+                        <ul class="nav">
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <nav>
+                <h3>Configurations</h3>
+                <ul class="nav">
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Home<span class="mdi mdi-chevron-down"></span></a></li>
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Home<span class="mdi mdi-chevron-down"></span></a></li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer hidden-small">
+                <a href="" title="Configurations">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                </a>
+                <a href="" data-btn="fullscreen" title="Plein écran">
+                    <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                </a>
+                <a href="" data-btn="lock" title="Afficher toutes les rubriques">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                </a>
+                <a href="" title="Déconnexion">
+                    <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                </a>
+            </div>
+        </aside>
+        
+        
+        <!-- Top navigation -->
+        <header>
+            <nav class="" role="navigation">
+                <a href="" id="menu_toggle"><i class="mdi mdi-backburger"></i></a>
+
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            5D Multimédia et Communication Web <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                            <li><a href=""><i class="mdi mdi-domain"></i> IT4Net</a></li>
+                            <li><a href=""><i class="mdi mdi-domain"></i> CAPTA</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li role="presentation" class="dropdown">
+                        <a href="" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                            <i class="mdi mdi-book"></i><span class="badge bg-green">2</span>
+                        </a>
+                        <ul id="menu1" class="dropdown-menu list-unstyled msg_list animated fadeInDown" role="menu">
+                            <li>
+                                <a href="">
+                                    <span><i class="mdi mdi-book"></i></span>
+                                    <strong>Titre du livre</strong>
+                                    <em>13 mars 2016</em>
+                                    <p>Informations complémentaires au sujet de l'ouvrage.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span><i class="mdi mdi-movie"></i></span>
+                                    <strong>Titre du DVD</strong>
+                                    <em>20 mars 2016</em>
+                                    <p>Informations complémentaires au sujet de l'ouvrage.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="all">
+                                    <strong>Voir la liste des ouvrages</strong>
+                                    <i class="mdi mdi-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span><img src="images/user.jpg" alt=""></span>Prénom Nom <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                            <li><a href="">Profile</a></li>
+                            <li><a href="">Settings<span class="badge bg-red pull-right">50%</span></a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="login.html">Log Out<i class="mdi mdi-logout pull-right"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+
+        
+               
+        <!-- main -->
+        <main role="main" class="users">
+            
+            <header class="clearfix">
+                <div class="title_left">
+                    <h3>Participants</h3>
+                </div>
+                <div class="title_right">
+                    <div class="col-md-6 col-sm-6 col-xs-12 form-group pull-right">
+                        <div class="input-group">
+                            <form class="form-inline" action="/projects/extranet-v.2/users/search" method="post">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="search" value="" placeholder="Recherche...">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-default">Go!</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+            </header>
+            
+            <div class="row">
+                <div class="col-md-12">
+
+                    <ul class="nav nav-tabs bar_tabs" role="tablist">
+                        <li class=""><a href="/projects/extranet-v.2/users/beneficiaire/all" role="tab">Tous</a></li>
+                        <li class=""><a href="/projects/extranet-v.2/users/beneficiaire/future" role="tab">Futurs</a></li>
+                        <li class=""><a href="/projects/extranet-v.2/users/beneficiaire/cancel" role="tab">Annulés</a></li>
+                        <li class="active"><a href="/projects/extranet-v.2/users/beneficiaire/actual" role="tab">Actuels</a></li>
+                        <li class=""><a href="/projects/extranet-v.2/users/beneficiaire/archive" role="tab">Archive</a></li>
+                    </ul>
+                    
+                    <section>
+                        
+                        <header class="tools-header">
+                            <h2>Participants <small></small></h2>
+                            <ul class="nav navbar-right tools-hz-bar">
+                               <li><a class="collapse-link" href="/projects/extranet-v.2/users/beneficiaireform/"><i class="mdi mdi-plus"></i> Ajouter un participant</a></li>
+                            </ul>
+                        </header>
+
+                        <p class="alert alert-success alert-display-ajax">
+                            <span></span>      
+                        </p>
+                
+                        <div class="body-section"> 
+                
+                            <section class="profile clearfix">
+                                <header class="tools-header">
+                                    <h2><a href="/projects/extranet-v.2/users/profile/2377">John Doe</a> <small><strong>Stagiaire 5D Lab</strong> <br />du 16 février 2016 au 15 mai 2016</small></h2>
+                                    <ul class="nav navbar-right tools-hz-bar">
+                                        <li>
+                                            <span class="info-number" title="2 matériel(s) emprunté(s)">
+                                                <i class="mdi mdi-book"></i><span class="badge">2</span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="info-number" title="72 jours avant la fin de la mesure">
+                                                <i class="mdi mdi-battery"></i><span class="badge">72</span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="info-number" title="Dernière entrée dans le journal de suivi il y a 25 jours">
+                                                <i class="mdi mdi-comment-multiple-outline"></i><span class="badge bg-danger">25</span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="info-number" title="A suivi 2 ateliers">
+                                                <i class="mdi mdi-presentation"></i><span class="badge">2</span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="info-number" title="Est présent depuis 2 heures">
+                                                <i class="mdi mdi-calendar-check success"></i>
+                                            </span>
+                                        </li>
+                                         <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="mdi mdi-wrench"></i></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="/projects/extranet-v.2/users/beneficiaireform/2377">Modifier</a></li>
+                                                <li><a data-toggle="modal" data-target="#delete" data-action="delete" data-url="/projects/extranet-v.2//users/beneficiaireform/2377" href="">Supprimer</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="collapse-link"><i class="mdi mdi-chevron-up"></i></a></li>
+                                    </ul>
+                                </header>
+
+                            <p class="alert alert-success alert-display-ajax">
+                                <span></span>
+                            </p>
+                            
+                            <div class="minified">
+
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+
+                                    <ul class="list-unstyled user_data">
+                                        <li><i class="mdi mdi-map-marker"></i>Chemin du Village 5,  1000 Lutry 
+                                            <br />
+                                        </li>
+                                        <li><i class="mdi mdi-cake"></i> Naissance : 26 septembre 1900</li>            <li><i class="mdi mdi-phone"></i>079 294 1839</li>    <li><i class="mdi mdi-email"></i>imanadam@gmail.com</li>            
+                                        <hr />
+                                        <li><i class="mdi mdi-account-circle"></i> Conseiler : Arianne Bitter</li>        <li><i class="mdi mdi-home-modern"></i> Structure : Pully</li>        
+                                    </ul>                                
+                                </div>
+
+                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                    <div class="profile_title">
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <table class="table profile_table">
+                                                    <tr class="cell-h1">
+                                                        <th colspan="7">Stagiaire 5D Lab <small> - du 16 février 2016 au 15 mai 2016</small></th>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td><small>Référent : Wesley Aza</small></td>
+                                                        <td><small>LACI</small></td>
+                                                        <td><small>100%</small></td>
+                                                        <td class="">
+                                                            <small>
+                                                            Début : 16 février 2016<br />
+                                                            Fin : 15 mai 2016<br />
+                                                            Préc. entretien : 8 jour(s)                                </small>
+                                                        </td>
+                                                        <td class="">
+                                                            <small>
+                                                            A.O. : 10 février 2016<br />                                </small>
+                                                        </td>
+
+                                                        <td data-action="update">
+                                                            <a href="/projects/extranet-v.2/users/beneficiaire-details-form/2320"><i class="mdi mdi-pencil"></i></a>	
+                                                        </td>
+
+                                                        <td data-action="delete" data-url="/projects/extranet-v.2/users/beneficiairedataildelete/2320" data-toggle="modal" data-target="#delete">
+                                                            <i class="mdi mdi-delete"></i>	
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+                                                <hr />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                                        
+                        <section class="profile clearfix">
+                            <header class="tools-header">
+                                <h2><a href="/projects/extranet-v.2/users/profile/2254">Sonia Nho</a> <small><strong>Webmaster</strong> <br />du 1 janvier 2016 au 31 mars 2016</small></h2>
+                                <ul class="nav navbar-right tools-hz-bar">
+                                    <li>
+                                        <span class="info-number" title="2 matériel(s) emprunté(s)">
+                                            <i class="mdi mdi-book"></i><span class="badge">2</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="info-number" title="5 jours avant la fin de la mesure">
+                                            <i class="mdi mdi-battery-10"></i><span class="badge bg-danger">5</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="info-number" title="Dernière entrée dans le journal de suivi aujourd'hui">
+                                            <i class="mdi mdi-comment-multiple-outline"></i><span class="badge">0</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="info-number" title="A suivi 2 ateliers">
+                                            <i class="mdi mdi-presentation"></i><span class="badge">2</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="info-number" title="Est absent">
+                                            <i class="mdi mdi-calendar-remove danger"></i>
+                                        </span>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="mdi mdi-wrench"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="/projects/extranet-v.2/users/beneficiaireform/2254">Modifier</a></li>
+                                            <li><a data-toggle="modal" data-target="#delete" data-action="delete" data-url="/projects/extranet-v.2//users/beneficiaireform/2254" href="">Supprimer</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="collapse-link"><i class="mdi mdi-chevron-up"></i></a></li>
+                                </ul>
+                            </header>
+
+                            <p class="alert alert-success alert-display-ajax">
+                                <span></span>
+                            </p>
+
+                            <div class="minified">
+
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <ul class="list-unstyled user_data">
+                                        <li><i class="mdi mdi-map-marker"></i>Rue de la Tour 65,  1011 Lausanne 
+                                        <br />
+                                        </li>
+                                        <li><i class="mdi mdi-cake"></i> Naissance : 7 janvier 1906</li>            
+                                        <li><i class="mdi mdi-phone"></i>079 555 55 55</li>    
+                                        <li><i class="mdi mdi-email"></i>hello@bluewin.ch</li>            
+                                        <hr />
+                                        <li><i class="mdi mdi-home-modern"></i> Structure : Lausanne</li>        
+                                    </ul>                                
+                                </div>
+
+                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                    <div class="profile_title">
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <table class="table profile_table">
+                                                    <tr class="cell-h1">
+                                                        <th colspan="7">Webmaster <small> - du 1 janvier 2016 au 31 mars 2016</small></th>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td><small>Référent : Olivier Dommange</small></td>
+                                                        <td><small></small></td>
+                                                        <td><small>100%</small></td>
+                                                        <td class="">
+                                                            <small>
+                                                            Début : 1 janvier 2016<br />
+                                                            Fin : 31 mars 2016<br />
+                                                            Préc. entretien : 13 jour(s)
+                                                            </small>
+                                                        </td>
+                                                        <td class="">
+                                                            <small>
+                                                            A.O. : 8 janvier 2016<br />
+                                                            </small>
+                                                        </td>
+
+                                                        <td data-action="update">
+                                                            <a href="/projects/extranet-v.2/users/beneficiaire-details-form/2279"><i class="mdi mdi-pencil"></i></a>	
+                                                        </td>
+
+                                                        <td data-action="delete" data-url="/projects/extranet-v.2/users/beneficiairedataildelete/2279" data-toggle="modal" data-target="#delete">
+                                                            <i class="mdi mdi-delete"></i>	
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table class="table profile_table">
+                                                    <tr class="cell-h1 disabled">
+                                                        <th colspan="7">Stagiaire 5D Lab <small> - du 1 octobre 2015 au 31 décembre 2015</small></th>
+                                                    </tr>
+                                                    <tr class=" disabled">
+                                                        <td><small>Référent : Olivier Dommange</small></td>
+                                                        <td><small>PI</small></td>
+                                                        <td><small>100%</small></td>
+                                                        <td class="">
+                                                            <small>
+                                                            Début : 1 octobre 2015<br />
+                                                            Fin : 31 décembre 2015<br />
+                                                            Préc. entretien : 13 jour(s)
+                                                            </small>
+                                                        </td>
+                                                        <td class="">
+                                                            <small>
+                                                            A.O. : 5 août 2015<br />E.F. : 17 décembre 2015<br />
+                                                            </small>
+                                                        </td>
+                                                        <td data-action="update">
+                                                            <a href="/projects/extranet-v.2/users/beneficiaire-details-form/2183"><i class="mdi mdi-pencil"></i></a>	
+                                                        </td>
+                                                        <td data-action="delete" data-url="/projects/extranet-v.2/users/beneficiairedataildelete/2183" data-toggle="modal" data-target="#delete">
+                                                            <i class="mdi mdi-delete"></i>	
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                                        
+                        <section class="profile clearfix">
+                            <header class="tools-header">
+                                <h2><a href="/projects/extranet-v.2/users/profile/2254">Jane David Berry</a> <small><strong>Webmaster</strong> <br />du 1 janvier 2016 au 31 mars 2016</small></h2>
+                                <ul class="nav navbar-right tools-hz-bar">
+                                    
+                                    <li>
+                                        <span class="info-number" title="2 matériel(s) emprunté(s) : 1 en retard">
+                                            <i class="mdi mdi-book"></i><span class="badge bg-danger">2</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="info-number" title="25 jours avant la fin de la mesure">
+                                            <i class="mdi mdi-battery-40"></i><span class="badge bg-warning">25</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="info-number" title="Dernière entrée dans le journal de suivi aujourd'hui">
+                                            <i class="mdi mdi-comment-multiple-outline"></i><span class="badge">0</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="info-number" title="A suivi 18 ateliers">
+                                            <i class="mdi mdi-presentation"></i><span class="badge">18</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="info-number" title="En RV, vacances, maladie,...">
+                                            <i class="mdi mdi-calendar-clock info"></i>
+                                        </span>
+                                    </li>
+                                    
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="mdi mdi-wrench"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="/projects/extranet-v.2/users/beneficiaireform/2254">Modifier</a></li>
+                                            <li><a data-toggle="modal" data-target="#delete" data-action="delete" data-url="/projects/extranet-v.2//users/beneficiaireform/2254" href="">Supprimer</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="collapse-link"><i class="mdi mdi-chevron-up"></i></a></li>
+                                </ul>
+                            </header>
+
+                            <p class="alert alert-success alert-display-ajax">
+                                <span></span>
+                            </p>
+
+                            <div class="minified">
+
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+
+                                    <ul class="list-unstyled user_data">
+                                        <li><i class="mdi mdi-map-marker"></i>Rue de la Tour 8,  1000 Lausanne 
+                                        <br />
+                                        </li>
+                                        <li><i class="mdi mdi-cake"></i> Naissance : 17 juin 1900</li>
+                                        <li><i class="mdi mdi-phone"></i>079 555 55 55</li>
+                                        <li><i class="mdi mdi-email"></i>helh@bluewin.ch</li>            
+                                        <hr />
+                                        <li><i class="mdi mdi-home-modern"></i> Structure : Lausanne</li>        
+                                    </ul>                                
+                                </div>
+
+                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                    <div class="profile_title">
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <table class="table profile_table">
+                                                    <tr class="cell-h1">
+                                                        <th colspan="7">Webmaster <small> - du 1 janvier 2016 au 31 mars 2016</small></th>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td><small>Référent : Olivier Dommange</small></td>
+                                                        <td><small></small></td>
+                                                        <td><small>100%</small></td>
+                                                        <td class="">
+                                                            <small>
+                                                            Début : 1 janvier 2016<br />
+                                                            Fin : 31 mars 2016<br />
+                                                            Préc. entretien : 13 jour(s)
+                                                            </small>
+                                                        </td>
+                                                        <td class="">
+                                                            <small>
+                                                            A.O. : 8 janvier 2016<br />
+                                                            </small>
+                                                        </td>
+
+                                                        <td data-action="update">
+                                                            <a href="/projects/extranet-v.2/users/beneficiaire-details-form/2279"><i class="mdi mdi-pencil"></i></a>	
+                                                        </td>
+    
+                                                        <td data-action="delete" data-url="/projects/extranet-v.2/users/beneficiairedataildelete/2279" data-toggle="modal" data-target="#delete">
+                                                            <i class="mdi mdi-delete"></i>	
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cell-h1 disabled">
+                                                        <th colspan="7">Stagiaire 5D Lab <small> - du 1 octobre 2015 au 31 décembre 2015</small></th>
+                                                    </tr>
+                                                    <tr class=" disabled">
+                                                        <td><small>Référent : Olivier Dommange</small></td>
+                                                        <td><small>PI</small></td>
+                                                        <td><small>100%</small></td>
+                                                        <td class="">
+                                                            <small>
+                                                            Début : 1 octobre 2015<br />
+                                                            Fin : 31 décembre 2015<br />
+                                                            Préc. entretien : 13 jour(s)
+                                                            </small>
+                                                        </td>
+                                                        <td class="">
+                                                            <small>
+                                                            A.O. : 5 août 2015<br />E.F. : 17 décembre 2015<br />
+                                                            </small>
+                                                        </td>
+                                                        <td data-action="update">
+                                                            <a href="/projects/extranet-v.2/users/beneficiaire-details-form/2183"><i class="mdi mdi-pencil"></i></a>	
+                                                        </td>
+                                                        <td data-action="delete" data-url="/projects/extranet-v.2/users/beneficiairedataildelete/2183" data-toggle="modal" data-target="#delete">
+                                                            <i class="mdi mdi-delete"></i>	
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                             
+                            
+                            
+                    </div>
+                </section>
+                                       
+            </div>
+        </div>        
+        
+        
+        </main>
+
+            
+            
+            <footer>
+                <p class="pull-right"><i class="glyphicon glyphicon-send"></i> Extranet | <small><a href="https://github.com/kimlabs/gentelella" target="_blank">inspiré du Gentelella Alela Bootstrap 3 template by Kimlabs</a></small>.</p>
+            </footer>
+
+        
+        
+    </div>
+      
+    
+    <script src="js/jquery/jquery-2.2.0.min.js"></script>
+    <script src="js/jquery/jquery-fullscreen-1.1.4.min.js"></script>
+    <script src="js/moment/moment-2.11.0.min.js"></script>
+    <script src="js/daterangepicker/daterangepicker.js"></script>
+    <script src="js/fullcalendar/fullcalendar-2.6.0.min.js"></script><!-- doc : http://fullcalendar.io/docs/ -->
+    <script src="js/fullcalendar/lang-all.js"></script>
+    <script src="js/bootstrap/bootstrap-3.3.6.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+  </body>
+</html>

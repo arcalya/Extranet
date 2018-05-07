@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="images/favicon.png" rel="shortcut icon" type="image/png" />
+
+    <title>Extranet</title>
+
+    <!-- https://materialdesignicons.com/getting-started -->
+    <link href="fonts/materialdesignicons/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="fonts/roboto/roboto.min.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-3.3.6.min.css" rel="stylesheet" />
+    
+    <link href="css/daterangepicker/daterangepicker.css" rel="stylesheet">
+    
+    
+    <link href="css/fullcalendar/fullcalendar-2.6.0.min.css" rel="stylesheet">
+    <link href="css/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+  
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/print.css" rel="stylesheet" media="print" />
+
+</head>
+
+<body class="nav-md">
+    <div class="container">
+        <aside class="col-md-3">
+            <div class="navbar nav_title">
+                <a href="index.html" class="site_title"><i class="glyphicon glyphicon-send"></i> <span>Extranet</span></a>
+            </div>
+            
+            <figure class="clearfix">
+                <div class="img-circle"><img src="images/user.jpg" alt="..."></div>
+                <figcaption><span>Bienvenue,</span> <h2>Prénom Nom</h2></figcaption>
+            </figure>
+                        
+            <nav>
+                <h3>Main</h3>
+                <ul class="nav">
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Interfaces<span class="mdi mdi-chevron-down"></span></a>
+                        <ul class="nav">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="emprunt-materiel.html">Emprunts</a></li>
+                            <li><a href="table.html">Tableau</a></li>
+                            <li><a href="form.html">Formulaire</a></li>
+                            <li><a href="liste-utilisateurs.html">Liste des utilisateurs</a></li>
+                            <li class="selected"><a href="profil.html">Profil</a></li>
+                            <li><a href="liste-seances.html">Liste des séances</a></li>
+                            <li><a href="timbreuse.html">Timbreuse</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="interventions.html">Intervetions</a></li>
+                            <li><a href="messages.html">Messages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Autres<span class="mdi mdi-chevron-down"></span></a>
+                        <ul class="nav">
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <nav>
+                <h3>Configurations</h3>
+                <ul class="nav">
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Home<span class="mdi mdi-chevron-down"></span></a></li>
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Home<span class="mdi mdi-chevron-down"></span></a></li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer hidden-small">
+                <a href="" title="Configurations">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                </a>
+                <a href="" data-btn="fullscreen" title="Plein écran">
+                    <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                </a>
+                <a href="" data-btn="lock" title="Afficher toutes les rubriques">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                </a>
+                <a href="" title="Déconnexion">
+                    <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                </a>
+            </div>
+        </aside>
+        
+        
+        <!-- Top navigation -->
+        <header>
+            <nav class="" role="navigation">
+                <a href="" id="menu_toggle"><i class="mdi mdi-backburger"></i></a>
+
+                <ul class="nav navbar-nav navbar-right tools-hz-bar">
+                    
+                    <li>
+                        <a href="" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            5D Multimédia et Communication Web <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                            <li><a href=""><i class="mdi mdi-domain"></i> IT4Net</a></li>
+                            <li><a href=""><i class="mdi mdi-domain"></i> CAPTA</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li role="presentation" class="dropdown">
+                        <a href="" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                            <i class="mdi mdi-book"></i><span class="badge bg-green">2</span>
+                        </a>
+                        <ul id="menu1" class="dropdown-menu list-unstyled msg_list animated fadeInDown" role="menu">
+                            <li>
+                                <a href="">
+                                    <span><i class="mdi mdi-book"></i></span>
+                                    <strong>Titre du livre</strong>
+                                    <em>13 mars 2016</em>
+                                    <p>Informations complémentaires au sujet de l'ouvrage.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span><i class="mdi mdi-movie"></i></span>
+                                    <strong>Titre du DVD</strong>
+                                    <em>20 mars 2016</em>
+                                    <p>Informations complémentaires au sujet de l'ouvrage.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="all">
+                                    <strong>Voir la liste des ouvrages</strong>
+                                    <i class="mdi mdi-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span><img src="images/user.jpg" alt=""></span>Prénom Nom <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                            <li><a href="">Profile</a></li>
+                            <li><a href="">Settings<span class="badge bg-red pull-right">50%</span></a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="login.html">Log Out<i class="mdi mdi-logout pull-right"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        <!-- main -->
+        <main role="main">
+            <header class="clearfix">
+                <div class="title_left">
+                    <h3>Profil <small>utilisateur</small></h3>
+                </div>
+            </header>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    <section>
+                        <header class="tools-header">
+                            <h2>Profil utilisateur <small>Rapport d'activités</small></h2>
+                            <ul class="nav navbar-right tools-hz-bar">
+                                <li><a class="collapse-link"><i class="mdi mdi-chevron-up"></i></a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="mdi mdi-wrench"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Settings 1</a>
+                                        </li>
+                                        <li><a href="#">Settings 2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="close-link"><i class="mdi mdi-close"></i></a>
+                                </li>
+                            </ul>
+                        </header>
+                        
+                        <div class="body-section"> 
+                            
+                            
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+
+                                <figure class="avatar-view" title="Change the avatar">
+                                    <img src="images/user.jpg" alt="...">
+                                </figure>
+
+                                <ul class="list-unstyled user_data">
+                                    <li><i class="mdi mdi-map-marker"></i>Sévelin 28,  1004 Lausanne <br />VD Suisse</li>
+                                    <li><i class="mdi mdi-cake"></i> Naissance : 1er janvier 1970</li>
+                                    <hr />
+                                    <li><i class="mdi mdi-phone"></i> 021 315 92 03</li>
+                                    <li><i class="mdi mdi-phone"></i> 077 315 92 03</li>
+                                    <li><i class="mdi mdi-email"></i> prenom.nom.mail@domain.net</li>
+                                    <hr />
+                                    <li><i class="mdi mdi-calendar"></i> Début : 1er janvier 2016</li>
+                                    <li><i class="mdi mdi-calendar"></i> Fin : 1er janvier 2016</li>
+                                    <hr />
+                                    <li><i class="mdi mdi-account-circle"></i> Conseiler : Prénom Nom</li>
+                                    <li><i class="mdi mdi-home-modern"></i> ORP : Lausanne</li>
+                                </ul>
+                            </div>
+                            
+                            
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+
+                                <div class="profile_title">
+                                    <div class="col-md-6">
+                                        <h2>Samuel Doe</h2>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div id="reportrange" class="pull-right" style="margin-top: 5px; background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #E6E9ED">
+                                            <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                                            <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+                                            <input type="text" name="daterange" value="01/01/2015 - 01/31/2015" style="margin-top: 5px; background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #E6E9ED" />
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table class="table">
+                                                <tr class="cell-h1">
+                                                    <td colspan="6">Lab Mutimédia <small>1er décembre 2015 au 31 janvier 2016</small></th>
+                                                </tr>
+                                                <tr>
+                                                    <td><small>Référent Olivier Dommange</small></td>
+                                                    <td><small>LACI - 100%</small></td>
+                                                    <td>
+                                                        <small>Début 	01.01.2016<br />
+                                                        Fin (prévue) 	31.03.2016 <br />
+                                                        Préc. entretien  	4 jours  </small>
+                                                    </td>
+                                                    <td>
+                                                        <small>A.O. 01.01.2016</small>
+                                                    </td>
+                                                    <td data-action="update">
+                                                        <a href="/projects/extranet-v.2/menus/menuform/25"><i class="mdi mdi-pencil"></i></a>	
+                                                    </td>
+                                                    <td data-action="delete" data-url="/projects/extranet-v.2/menus/menudelete/25" data-toggle="modal" data-target="#delete">
+                                                        <i class="mdi mdi-delete"></i>	
+                                                    </td>
+                                                </tr> 
+                                                <tr class="cell-h1">
+                                                    <td colspan="6">Lab Mutimédia <small>1er décembre 2015 au 31 janvier 2016</small></th>
+                                                </tr>
+                                                <tr>
+                                                    <td><small>Référent Olivier Dommange</small></td>
+                                                    <td><small>LACI - 100%</small></td>
+                                                    <td>
+                                                        <small>Début 	01.01.2016<br />
+                                                        Fin (prévue) 	31.03.2016 <br />
+                                                        Préc. entretien  	4 jours  </small>
+                                                    </td>
+                                                    <td>
+                                                        <small>A.O. 01.01.2016</small>
+                                                    </td>
+                                                    <td data-action="update">
+                                                        <a href="/projects/extranet-v.2/menus/menuform/25"><i class="mdi mdi-pencil"></i></a>	
+                                                    </td>
+                                                    <td data-action="delete" data-url="/projects/extranet-v.2/menus/menudelete/25" data-toggle="modal" data-target="#delete">
+                                                        <i class="mdi mdi-delete"></i>	
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <hr />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="" role="tabpanel" data-example-id="togglable-tabs">
+                                    <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Suivi</a></li>
+                                        <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Activités</a></li>
+                                        <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Ateliers</a></li>
+                                        <li role="presentation" class=""><a href="#tab_content4" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Matériels</a></li>
+                                    </ul>
+                                    <div id="myTabContent" class="tab-content">
+                                        <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
+                                            <header class="tools-header">
+                                                <ul class="nav navbar-right">
+                                                    <li><a class="collapse-link" href="/projects/extranet-v.2/offices/officesform"><i class="mdi mdi-plus"></i> Ajouter</a></li>
+                                                </ul>
+                                            </header>
+                                            <!-- start recent activity -->
+                                            <ul class="diary">
+                                                <li>
+                                                    <div class="date">
+                                                        <span><img src="images/user.jpg" alt=""></span>
+                                                        <h3>24</h3>
+                                                        <p>Mai<br />2016</p>
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="tools">
+                                                            <a href="/projects/extranet-v.2/menus/menuform/25"><i class="mdi mdi-pencil"></i></a>	
+                                                            <i class="mdi mdi-delete"></i>
+                                                        </div>
+                                                        <h4 class="heading">
+                                                            Entretien	
+                                                        </h4>
+                                                        <blockquote><em>Olivier Dommange</em> - Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.</blockquote>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="date">
+                                                        <span><img src="images/user.jpg" alt=""></span>
+                                                        <h3 class="date text-info">24</h3>
+                                                        <p class="month">Mai<br />2016</p>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h4 class="heading">Entretien</h4>
+                                                        <blockquote class="message">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.</blockquote>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="date">
+                                                        <span><img src="images/user.jpg" alt=""></span>
+                                                        <h3 class="date text-info">24</h3>
+                                                        <p class="month">Mai<br />2016</p>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h4 class="heading">Entretien</h4>
+                                                        <blockquote class="message">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.</blockquote>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                            <!-- end recent activity -->
+
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
+                                            
+                                            <!-- CONTENT -->
+                                            <div id="calendar"></div>
+
+                                        </div>
+                                        
+                                        <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
+                                             <!-- start user projects -->
+                                            <table class="data table table-striped no-margin">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Atelier</th>
+                                                        <th>Description</th>
+                                                        <th class="hidden-phone">Durée</th>
+                                                        <th>Evaluation</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>HTML 5/CSS 3</td>
+                                                        <td>
+                                                            <p>
+                                                            <strong>Prérequis :</strong>
+                                                            Connaissances et pratique de base de la vidéo. Être à l’aise sur pc ou mac et connaissances d' Adobe Photoshop et Adobe Illustrator ou autres logiciels liés au montage vidéo. 
+                                                            </p>
+                                                            <p>
+                                                            <strong>Description :</strong>
+                                                            Introduction de l'interface, le Workflow, numérisation et les codecs. Différents menus de configuration d' Adobe Premiere pro: 1. Organisation du travail et des dossiers du projet 2. Réglage système 3. Configuration simplifiée et réglages audio/vidéo 4. Acquérir une méthodologie de travail en comprenant le processus de numérisation, les outils et leurs utilisations, les transition et les effets. 
+                                                            </p>
+                                                            <p>
+                                                            <strong>Remarques :</strong>
+                                                            OBJECTIF DE FORMATIONS: Les participants seront capable de faire un montage en appliquant une méthode de travail adapter.
+                                                            </p>
+                                                            <p>
+                                                            <strong>Accessible pour :</strong>
+                                                            5D Multimédia et communication Web  
+                                                            </p>
+                                                        </td>
+                                                        <td class="hidden-phone">18</td>
+                                                        <td class="vertical-align-mid">
+                                                            <p class="ratings">
+                                                                <a>4.0</a>
+                                                                <a href="#"><span class="mdi mdi-star"></span></a>
+                                                                <a href="#"><span class="mdi mdi-star"></span></a>
+                                                                <a href="#"><span class="mdi mdi-star"></span></a>
+                                                                <a href="#"><span class="mdi mdi-star"></span></a>
+                                                                <a href="#"><span class="mdi mdi-star-outline"></span></a>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>New Partner Contracts Consultanci</td>
+                                                        <td>Deveint Inc</td>
+                                                        <td class="hidden-phone">13</td>
+                                                        <td class="vertical-align-mid">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-danger" data-transitiongoal="15"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Partners and Inverstors report</td>
+                                                        <td>Deveint Inc</td>
+                                                        <td class="hidden-phone">30</td>
+                                                        <td class="vertical-align-mid">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-success" data-transitiongoal="45"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>New Company Takeover Review</td>
+                                                        <td>Deveint Inc</td>
+                                                        <td class="hidden-phone">28</td>
+                                                        <td class="vertical-align-mid">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-success" data-transitiongoal="75"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- end user projects -->
+
+                                        </div>
+                                        
+                                        <div role="tabpanel" class="tab-pane fade" id="tab_content4" aria-labelledby="profile-tab">
+                                            <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+            
+            <footer>
+                <p class="pull-right"><i class="glyphicon glyphicon-send"></i> Extranet | <small><a href="https://github.com/kimlabs/gentelella" target="_blank">inspiré du Gentelella Alela Bootstrap 3 template by Kimlabs</a></small>.</p>
+            </footer>
+        </main>
+        
+        
+    </div>
+      
+    
+    <script src="js/jquery/jquery-2.2.0.min.js"></script>
+    <script src="js/jquery/jquery-fullscreen-1.1.4.min.js"></script>
+    <script src="js/moment/moment-2.11.0.min.js"></script>
+    <script src="js/daterangepicker/daterangepicker.js"></script>
+    <script src="js/fullcalendar/fullcalendar-2.6.0.min.js"></script><!-- doc : http://fullcalendar.io/docs/ -->
+    <script src="js/fullcalendar/lang-all.js"></script>
+    <script src="js/bootstrap/bootstrap-3.3.6.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+$(function() {
+    $('div.pull-right').daterangepicker();
+});
+</script>
+    
+  </body>
+</html>

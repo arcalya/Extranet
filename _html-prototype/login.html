@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="images/favicon.png" rel="shortcut icon" type="image/png" />
+
+    <title>Extranet</title>
+
+    <!-- https://materialdesignicons.com/getting-started -->
+    <link href="fonts/materialdesignicons/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="fonts/roboto/roboto.min.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-3.3.6.min.css" rel="stylesheet" />
+    
+    <link href="css/fullcalendar/fullcalendar-2.6.0.min.css" rel="stylesheet">
+    <link href="css/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+  
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/print.css" rel="stylesheet" media="print" />
+
+</head>
+
+<body class="nav-md login">
+    <div class="container">
+                
+        <!-- main -->
+        <main role="main" class="login">
+            
+            
+            <div class="row">
+                <div class="">
+                    
+                    <section>
+                        <header class="clearfix">
+                            <h2>Extranet <small>- Connexion</small></h2>
+                        </header>
+                        
+                        <div class=""> 
+                            
+                            <!-- CONTENT -->
+                            <form>
+                                <div>
+                                    <input type="text" class="form-control" placeholder="Nom d'utilisateur" required="required">
+                                </div>
+                                <div>
+                                    <input type="password" class="form-control" placeholder="Mot de passe" required="required">
+                                    <a class="reset_pass" data-toggle="modal" data-target="#GetPassModalForm">Mot de passe oublié ?</a>
+                                </div>
+                                    <div class="checkbox">
+                                    <label for="keepconnected"><input type="checkbox" name="keepconnected" id="keepconnected" /> Rester connecter</label>
+                                    </div>
+                                <div>
+                                    <a class="btn btn-primary submit" href="index.html">Valider</a>
+                                </div>
+                            </form>
+                            
+                            <!-- GET NEW PASSWORD MODAL FORM -->
+                            <div id="GetPassModalForm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalCalendarForm" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            <h4 class="modal-title">Nouveau mot de passe</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form id="antoform" class="form-horizontal calender" role="form">
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">Adresse e-mail</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="adminemailrecover" name="adminemailrecover">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default btn-sm antoclose" data-dismiss="modal">Fermer</button>
+                                            <button type="button" class="btn btn-primary antosubmit">Envoyer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="fc_edit" data-toggle="modal" data-target="#GetPassModalForm"></div>
+
+                            
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+            
+            <footer>
+                <p class="pull-right"><i class="glyphicon glyphicon-send"></i> Extranet</p>
+            </footer>
+        </main>
+        
+        
+    </div>
+      
+    
+    <script src="js/jquery/jquery-2.2.0.min.js"></script>
+    <script src="js/jquery/jquery-fullscreen-1.1.4.min.js"></script>
+    <script src="js/moment/moment-2.11.0.min.js"></script>
+    <script src="js/daterangepicker/daterangepicker.js"></script>
+    <script src="js/fullcalendar/fullcalendar-2.6.0.min.js"></script><!-- doc : http://fullcalendar.io/docs/ -->
+    <script src="js/fullcalendar/lang-all.js"></script>
+    <script src="js/smartwizard/jquery.smartWizard.js"></script>
+    <script src="js/bootstrap/bootstrap-3.3.6.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

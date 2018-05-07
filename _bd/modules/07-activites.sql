@@ -1,0 +1,31 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+
+CREATE TABLE IF NOT EXISTS `activite` (
+  `IDActivite` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `IDBeneficiaire` int(10) unsigned NOT NULL DEFAULT '0',
+  `IDTypeActivite` int(10) unsigned NOT NULL DEFAULT '0',
+  `IDProjet` int(10) unsigned DEFAULT '0',
+  `DateActivite` date NOT NULL DEFAULT '0000-00-00',
+  `DureeActivite` decimal(4,2) unsigned NOT NULL DEFAULT '0.00',
+  `TitreActivite` varchar(255) DEFAULT NULL,
+  `CommentaireActivite` text,
+  `timestamp` bigint(20) DEFAULT '0',
+  PRIMARY KEY (`IDActivite`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=88224 ;
+
+CREATE TABLE IF NOT EXISTS `typeactivite` (
+  `IDTypeActivite` int(10) unsigned NOT NULL DEFAULT '0',
+  `NomActivite` varchar(50) DEFAULT NULL,
+  `NomActiviteSpecifique` varchar(50) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

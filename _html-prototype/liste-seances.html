@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="images/favicon.png" rel="shortcut icon" type="image/png" />
+
+    <title>Extranet</title>
+
+    <!-- https://materialdesignicons.com/getting-started -->
+    <link href="fonts/materialdesignicons/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="fonts/roboto/roboto.min.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-3.3.6.min.css" rel="stylesheet" />
+    
+    <link href="css/daterangepicker/daterangepicker.css" rel="stylesheet">
+    
+    
+    <link href="css/fullcalendar/fullcalendar-2.6.0.min.css" rel="stylesheet">
+    <link href="css/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+  
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/print.css" rel="stylesheet" media="print" />
+
+</head>
+
+<body class="nav-md">
+    <div class="container">
+        <aside class="col-md-3">
+            <div class="navbar nav_title">
+                <a href="index.html" class="site_title"><i class="glyphicon glyphicon-send"></i> <span>Extranet</span></a>
+            </div>
+            
+            <figure class="clearfix">
+                <div class="img-circle"><img src="images/user.jpg" alt="..."></div>
+                <figcaption><span>Bienvenue,</span> <h2>Prénom Nom</h2></figcaption>
+            </figure>
+                        
+            <nav>
+                <h3>Main</h3>
+                <ul class="nav">
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Interfaces<span class="mdi mdi-chevron-down"></span></a>
+                        <ul class="nav">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="emprunt-materiel.html">Emprunts</a></li>
+                            <li><a href="table.html">Tableau</a></li>
+                            <li><a href="form.html">Formulaire</a></li>
+                            <li><a href="liste-utilisateurs.html">Liste des utilisateurs</a></li>
+                            <li><a href="profil.html">Profil</a></li>
+                            <li class="selected"><a href="liste-seances.html">Liste des séances</a></li>
+                            <li><a href="timbreuse.html">Timbreuse</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="interventions.html">Intervetions</a></li>
+                            <li><a href="messages.html">Messages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Autres<span class="mdi mdi-chevron-down"></span></a>
+                        <ul class="nav">
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <nav>
+                <h3>Configurations</h3>
+                <ul class="nav">
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Home<span class="mdi mdi-chevron-down"></span></a></li>
+                    <li><a href=""><i class="mdi mdi-share-variant"></i>Home<span class="mdi mdi-chevron-down"></span></a></li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer hidden-small">
+                <a href="" title="Configurations">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                </a>
+                <a href="" data-btn="fullscreen" title="Plein écran">
+                    <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                </a>
+                <a href="" data-btn="lock" title="Afficher toutes les rubriques">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                </a>
+                <a href="" title="Déconnexion">
+                    <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                </a>
+            </div>
+        </aside>
+        
+        
+        <!-- Top navigation -->
+        <header>
+            <nav class="" role="navigation">
+                <a href="" id="menu_toggle"><i class="mdi mdi-backburger"></i></a>
+
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            5D Multimédia et Communication Web <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                            <li><a href=""><i class="mdi mdi-domain"></i> IT4Net</a></li>
+                            <li><a href=""><i class="mdi mdi-domain"></i> CAPTA</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li role="presentation" class="dropdown">
+                        <a href="" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                            <i class="mdi mdi-book"></i><span class="badge bg-green">2</span>
+                        </a>
+                        <ul id="menu1" class="dropdown-menu list-unstyled msg_list animated fadeInDown" role="menu">
+                            <li>
+                                <a href="">
+                                    <span><i class="mdi mdi-book"></i></span>
+                                    <strong>Titre du livre</strong>
+                                    <em>13 mars 2016</em>
+                                    <p>Informations complémentaires au sujet de l'ouvrage.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span><i class="mdi mdi-movie"></i></span>
+                                    <strong>Titre du DVD</strong>
+                                    <em>20 mars 2016</em>
+                                    <p>Informations complémentaires au sujet de l'ouvrage.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="all">
+                                    <strong>Voir la liste des ouvrages</strong>
+                                    <i class="mdi mdi-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span><img src="images/user.jpg" alt=""></span>Prénom Nom <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                            <li><a href="">Profile</a></li>
+                            <li><a href="">Settings<span class="badge bg-red pull-right">50%</span></a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="login.html">Log Out<i class="mdi mdi-logout pull-right"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+
+        
+               
+        <!-- main -->
+        <main role="main" class="users">
+            
+            <header class="clearfix">
+                <div class="title_left">
+                    <h3>Liste des séances</h3>
+                </div>
+            </header>
+            
+            <div class="row">
+                <div class="col-md-12">
+
+                    <ul class="nav nav-tabs bar_tabs" role="tablist">
+                        <li class=""><a href="/projects/extranet-v.2/users/beneficiaire/all" role="tab">Séances techniques</a></li>
+                        <li class="active"><a href="/projects/extranet-v.2/users/beneficiaire/future" role="tab">Séances d'équipe</a></li>
+                        <li class=""><a href="/projects/extranet-v.2/users/beneficiaire/cancel" role="tab">Séances autre</a></li>
+                        <li class=""><a href="/projects/extranet-v.2/users/beneficiaire/actual" role="tab">Encore des séances</a></li>
+                    </ul>
+                    
+                    <section>
+                        
+                        <header class="tools-header">
+                            <h2>Séance : Séance d'équipe <small></small></h2>
+                            <ul class="nav navbar-right tools-hz-bar">
+                               <li><a class="collapse-link" href="/projects/extranet-v.2/users/beneficiaireform/" data-toggle="modal" data-target="#modalSeanceThemeDetail"><i class="mdi mdi-plus"></i> Ajouter un thème</a></li>
+                               <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span></span><i class="mdi mdi-filter"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><span>Historiques</span></li>
+                                        <li class=""><a href="/extranet_v2_etsl_ch/workshops/workshops/all">Dernier libellé</a></li>
+                                        <li class="active"><a href="/extranet_v2_etsl_ch/workshops/workshops/actual">Tous les libellés</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </header>
+
+                        <p class="alert alert-success alert-display-ajax">
+                            <span></span>      
+                        </p>
+                
+                        
+                <header class="tools-header">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                            <form class="form-inline" action="/projects/extranet-v.2/users/search" method="post">
+                                    <div class="form-group">
+                                        <select class="form-control input-small" name="theme">
+                                            <option>Tous les thèmes</option>
+                                            <option>Participants</option>
+                                            <option>Thème 1</option>
+                                            <option>Thème 2</option>
+                                            <option>Thème 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="mdi mdi-clock"></i></div>
+                                        <input type="text" class="form-control input-small" name="date" value="26.09.2016">
+                                    </div>
+                                    -
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="mdi mdi-clock"></i></div>
+                                        <input type="text" class="form-control input-small" name="date" value="26.09.2016">
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control input-small" name="actif">
+                                            <option>Tous</option>
+                                            <option selected>Actif</option>
+                                            <option>Inactif</option>
+                                        </select>
+                                    </div>
+                                <button type="submit" class="btn btn-default">Go!</button>
+                            </form>
+                    </div>
+                </header>
+                        
+                        
+                        <div class="body-section"> 
+                
+                            <section class="profile clearfix">
+                                <header class="tools-header">
+                                    <h2>Participants</h2>
+                                    <ul class="nav navbar-right tools-hz-bar">                                          
+                                        <li>
+                                            <a title="Ajouter un sujet" class="info-number operation" href="#" data-toggle="modal" data-target="#modalSeanceSujetDetail"><i class="mdi mdi-plus"></i></a>
+                                        </li>
+                                        <li>
+                                            <span class="info-number coaching-219" title="3 Sujets">
+                                                <i class="mdi mdi-comment-outline"></i><span class="badge">3</span>
+                                            </span>
+                                        </li> 
+                                        <li class="margin-left-medium">&nbsp;</li>     
+                                        <li>
+                                            <a class="info-number operation" href="#"><i class="mdi mdi-checkbox-marked"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="info-number operation" href="#" data-toggle="modal" data-target="#modalSeanceThemeDetail"><i class="mdi mdi-pencil"></i></a>
+                                        </li>
+                                        <li>
+                                            <span class="info-number"><i class="mdi mdi-delete mdi-disabled"></i></span>
+                                        </li>
+                                    </ul>
+                                </header>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <table class="table">
+                                            <tr class="cell-h1">
+                                                <th colspan="3">Sujet 1 <small><em>(4 Libellés)</em></small></th>
+                                                <th>Responsable</th>
+                                                <th>Délai</th>
+                                                <th>Actif</th>
+                                                <th colspan="2"></th>
+                                            </tr>
+                                            <tr class="cell-h1">
+                                                <td colspan="5">
+                                                    <ul class="nav tools-hz-bar">
+                                                        <li>
+                                                        <span class="info-number operation" title="Ajouter un libellé" data-toggle="modal" data-target="#modalSeanceDetail">
+                                                            <i class="mdi mdi-plus"></i>
+                                                        </span>
+                                                        </li>
+                                                        <li>
+                                                        <span class="info-number operation" title="Historique : 2 libellés | Dernier en date : mardi, 26 septembre 2016">
+                                                            <i class="mdi mdi-history mdi-minified"></i>
+                                                            <span class="badge bg-primary">2</span>
+                                                        </span>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td data-action="active">
+                                                    <span><i class="mdi mdi-checkbox-marked"></i></span>	
+                                                </td>
+                                                <td data-toggle="modal" data-target="#modalSeanceSujetDetail">
+                                                    <span><i class="mdi mdi-pencil"></i></span>	
+                                                </td>
+                                                <td data-action="delete" data-url="#" data-toggle="modal" data-target="#delete">
+                                                    <i class="mdi mdi-delete mdi-disabled"></i>	
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="date">
+                                                        <span><img src="images/user.jpg" alt=""></span>
+                                                        <h3>26</h3>
+                                                        <p>septembre<br />2016</p>
+                                                    </div>
+                                                </td>
+                                                <td><small class="label label-default">#1020</small></td>
+                                                <td>
+                                                    <h5>
+                                                    Captation vocale a été réalisé entre temps. Une nouvelle version du montage est en cours en incluant le matériel validé. Une première validation est prévue le 4 mai.
+                                                    </h5>
+                                                </td>
+                                                <td><small>Olivier Dommange</small></td>
+                                                <td colspan="2"><small>11 octobre 2016</small></td>
+                                                <td data-toggle="modal" data-target="#modalSeanceDetail">
+                                                    <span><i class="mdi mdi-pencil"></i></span>	
+                                                </td>
+                                                <td data-action="delete" data-url="#" data-toggle="modal" data-target="#delete">
+                                                    <i class="mdi mdi-delete"></i>	
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="date">
+                                                        <h3>26</h3>
+                                                        <p>septembre<br />2016</p>
+                                                    </div>
+                                                </td>
+                                                <td><small class="label label-default">#1021</small></td>
+                                                <td>
+                                                    <h5>
+                                                    Captation vocale a été réalisé entre temps. Une nouvelle version du montage est en cours en incluant le matériel validé. Une première validation est prévue le 4 mai.
+                                                    </h5>
+                                                </td>
+                                                <td><small>Olivier Dommange</small></td>
+                                                <td colspan="2"><small>A définir</small></td>
+                                                <td data-toggle="modal" data-target="#modalSeanceDetail">
+                                                    <span><i class="mdi mdi-pencil"></i></span>	
+                                                </td>
+                                                <td data-action="delete" data-url="#" data-toggle="modal" data-target="#delete">
+                                                    <i class="mdi mdi-delete"></i>	
+                                                </td>
+                                            </tr>
+                                                                                        
+                                            <tr class="disabled minified">
+                                                <td>
+                                                    <div class="date">
+                                                        <h3>10</h3>
+                                                        <p>septembre<br />2016</p>
+                                                    </div>
+                                                </td>
+                                                <td><small class="label label-default">#1010</small></td>
+                                                <td>
+                                                    <h5>
+                                                    Captation vocale a été réalisé entre temps. Une nouvelle version du montage est en cours en incluant le matériel validé. Une première validation est prévue le 4 mai.
+                                                    </h5>
+                                                </td>
+                                                <td><small></small></td>
+                                                <td colspan="2"><small>2 semaines</small></td>
+                                                <td data-toggle="modal" data-target="#modalSeanceDetail">
+                                                    <span><i class="mdi mdi-pencil"></i></span>	
+                                                </td>
+                                                <td data-action="delete" data-url="#" data-toggle="modal" data-target="#delete">
+                                                    <i class="mdi mdi-delete"></i>	
+                                                </td>
+                                            </tr>
+                                            <tr class="disabled minified">
+                                                <td>
+                                                    <div class="date">
+                                                        <h3>9</h3>
+                                                        <p>septembre<br />2016</p>
+                                                    </div>
+                                                </td>
+                                                <td><small class="label label-default">#1001</small></td>
+                                                <td>
+                                                    <h5>
+                                                    Captation vocale a été réalisé entre temps. Une nouvelle version du montage est en cours en incluant le matériel validé. Une première validation est prévue le 4 mai.
+                                                    </h5>
+                                                </td>
+                                                <td><small>Olivier Dommange</small></td>
+                                                <td colspan="2"><small>1 semaine</small></td>
+                                                <td data-toggle="modal" data-target="#modalSeanceDetail">
+                                                    <span><i class="mdi mdi-pencil"></i></span>	
+                                                </td>
+                                                <td data-action="delete" data-url="#" data-toggle="modal" data-target="#delete">
+                                                    <i class="mdi mdi-delete"></i>	
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+                        </section>
+                                  
+                            
+                            <section class="profile clearfix">
+                                <header class="tools-header">
+                                    <h2>Participants</h2>
+                                    <ul class="nav navbar-right tools-hz-bar">                                          
+                                        <li>
+                                            <a title="Ajouter un sujet" class="info-number operation" href="#" data-toggle="modal" data-target="#modalSeanceSujetDetail"><i class="mdi mdi-plus"></i></a>
+                                        </li>
+                                        <li>
+                                            <span class="info-number coaching-219" title="3 Sujets">
+                                                <i class="mdi mdi-comment-outline"></i><span class="badge">3</span>
+                                            </span>
+                                        </li> 
+                                        <li class="margin-left-medium">&nbsp;</li>     
+                                        <li>
+                                            <a class="info-number operation" href="#"><i class="mdi mdi-checkbox-marked"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="info-number operation" href="#" data-toggle="modal" data-target="#modalSeanceThemeDetail"><i class="mdi mdi-pencil"></i></a>
+                                        </li>
+                                        <li>
+                                            <span class="info-number"><i class="mdi mdi-delete mdi-disabled"></i></span>
+                                        </li>
+                                    </ul>
+                                </header>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <table class="table">
+                                            <tr class="cell-h1">
+                                                <th colspan="3">Sujet 1 <small><em>(4 Libellés)</em></small></th>
+                                                <th>Responsable</th>
+                                                <th>Délai</th>
+                                                <th>Actif</th>
+                                                <th colspan="2"></th>
+                                            </tr>
+                                            <tr class="cell-h1">
+                                                <td colspan="5">
+                                                    <ul class="nav tools-hz-bar">
+                                                        <li>
+                                                        <span class="info-number operation" title="Ajouter un libellé" data-toggle="modal" data-target="#modalSeanceDetail">
+                                                            <i class="mdi mdi-plus"></i>
+                                                        </span>
+                                                        </li>
+                                                        <li>
+                                                        <span class="info-number operation" title="Historique : 2 libellés | Dernier en date : mardi, 26 septembre 2016">
+                                                            <i class="mdi mdi-history mdi-minified"></i>
+                                                            <span class="badge bg-primary">2</span>
+                                                        </span>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td data-action="active">
+                                                    <span><i class="mdi mdi-checkbox-marked"></i></span>	
+                                                </td>
+                                                <td data-toggle="modal" data-target="#modalSeanceSujetDetail">
+                                                    <span><i class="mdi mdi-pencil"></i></span>	
+                                                </td>
+                                                <td data-action="delete" data-url="#" data-toggle="modal" data-target="#delete">
+                                                    <i class="mdi mdi-delete mdi-disabled"></i>	
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="date">
+                                                        <span><img src="images/user.jpg" alt=""></span>
+                                                        <h3>26</h3>
+                                                        <p>septembre<br />2016</p>
+                                                    </div>
+                                                </td>
+                                                <td><small class="label label-default">#1020</small></td>
+                                                <td>
+                                                    <h5>
+                                                    Captation vocale a été réalisé entre temps. Une nouvelle version du montage est en cours en incluant le matériel validé. Une première validation est prévue le 4 mai.
+                                                    </h5>
+                                                </td>
+                                                <td><small>Olivier Dommange</small></td>
+                                                <td colspan="2"><small>11 octobre 2016</small></td>
+                                                <td data-toggle="modal" data-target="#modalSeanceDetail">
+                                                    <span><i class="mdi mdi-pencil"></i></span>	
+                                                </td>
+                                                <td data-action="delete" data-url="#" data-toggle="modal" data-target="#delete">
+                                                    <i class="mdi mdi-delete"></i>	
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="date">
+                                                        <h3>26</h3>
+                                                        <p>septembre<br />2016</p>
+                                                    </div>
+                                                </td>
+                                                <td><small class="label label-default">#1021</small></td>
+                                                <td>
+                                                    <h5>
+                                                    Captation vocale a été réalisé entre temps. Une nouvelle version du montage est en cours en incluant le matériel validé. Une première validation est prévue le 4 mai.
+                                                    </h5>
+                                                </td>
+                                                <td><small>Olivier Dommange</small></td>
+                                                <td colspan="2"><small>A définir</small></td>
+                                                <td data-toggle="modal" data-target="#modalSeanceDetail">
+                                                    <span><i class="mdi mdi-pencil"></i></span>	
+                                                </td>
+                                                <td data-action="delete" data-url="#" data-toggle="modal" data-target="#delete">
+                                                    <i class="mdi mdi-delete"></i>	
+                                                </td>
+                                            </tr>
+                                                                                        
+                                            <tr class="disabled minified">
+                                                <td>
+                                                    <div class="date">
+                                                        <h3>10</h3>
+                                                        <p>septembre<br />2016</p>
+                                                    </div>
+                                                </td>
+                                                <td><small class="label label-default">#1010</small></td>
+                                                <td>
+                                                    <h5>
+                                                    Captation vocale a été réalisé entre temps. Une nouvelle version du montage est en cours en incluant le matériel validé. Une première validation est prévue le 4 mai.
+                                                    </h5>
+                                                </td>
+                                                <td><small></small></td>
+                                                <td colspan="2"><small>2 semaines</small></td>
+                                                <td data-toggle="modal" data-target="#modalSeanceDetail">
+                                                    <span><i class="mdi mdi-pencil"></i></span>	
+                                                </td>
+                                                <td data-action="delete" data-url="#" data-toggle="modal" data-target="#delete">
+                                                    <i class="mdi mdi-delete"></i>	
+                                                </td>
+                                            </tr>
+                                            <tr class="disabled minified">
+                                                <td>
+                                                    <div class="date">
+                                                        <h3>9</h3>
+                                                        <p>septembre<br />2016</p>
+                                                    </div>
+                                                </td>
+                                                <td><small class="label label-default">#1001</small></td>
+                                                <td>
+                                                    <h5>
+                                                    Captation vocale a été réalisé entre temps. Une nouvelle version du montage est en cours en incluant le matériel validé. Une première validation est prévue le 4 mai.
+                                                    </h5>
+                                                </td>
+                                                <td><small>Olivier Dommange</small></td>
+                                                <td colspan="2"><small>1 semaine</small></td>
+                                                <td data-toggle="modal" data-target="#modalSeanceDetail">
+                                                    <span><i class="mdi mdi-pencil"></i></span>	
+                                                </td>
+                                                <td data-action="delete" data-url="#" data-toggle="modal" data-target="#delete">
+                                                    <i class="mdi mdi-delete"></i>	
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+                        </section>
+                                  
+                            
+                    </div>
+                </section>
+                                       
+            </div>
+        </div>        
+        
+        
+        </main>
+
+        
+        
+            <!-- Start modal -->
+            <div id="modalSeanceDetail" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title">Séance - Libellé</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal" role="form" id="modal-form" method="post" action="/extranet_v2_etsl_ch/schedule/tache_add">
+                                          
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Libelle">Libellé</label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <textarea placeholder="" name="Libelle" id="TitreTache" class="form-control col-md-7 col-xs-12"></textarea>
+                                </div>
+                            </div>         
+                   
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Responsable">Responsable</label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" placeholder="" name="Responsable" id="Responsable" value="" class="form-control col-md-7 col-xs-12">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Delai">Délai</label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" placeholder="" name="Delai" id="Delai" value="" class="form-control col-md-7 col-xs-12">
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default antoclose" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Start modal -->
+            <div id="modalSeanceSujetDetail" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title">Séance - Sujet</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal" role="form" id="modal-form" method="post" action="">   
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Sujet">Sujet</label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" placeholder="" name="Sujet" id="Sujet" value="" class="form-control col-md-7 col-xs-12">
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default antoclose" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Start modal -->
+            <div id="modalSeanceThemeDetail" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title">Séance - Thème</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal" role="form" id="modal-form" method="post" action="">   
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Theme">Tème</label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" placeholder="" name="Theme" id="Theme" value="" class="form-control col-md-7 col-xs-12">
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default antoclose" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            
+            <footer>
+                <p class="pull-right"><i class="glyphicon glyphicon-send"></i> Extranet | <small><a href="https://github.com/kimlabs/gentelella" target="_blank">inspiré du Gentelella Alela Bootstrap 3 template by Kimlabs</a></small>.</p>
+            </footer>
+
+        
+        
+    </div>
+      
+    
+    <script src="js/jquery/jquery-2.2.0.min.js"></script>
+    <script src="js/jquery/jquery-fullscreen-1.1.4.min.js"></script>
+    <script src="js/moment/moment-2.11.0.min.js"></script>
+    <script src="js/daterangepicker/daterangepicker.js"></script>
+    <script src="js/fullcalendar/fullcalendar-2.6.0.min.js"></script><!-- doc : http://fullcalendar.io/docs/ -->
+    <script src="js/fullcalendar/lang-all.js"></script>
+    <script src="js/bootstrap/bootstrap-3.3.6.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+  </body>
+</html>

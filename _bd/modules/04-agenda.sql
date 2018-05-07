@@ -1,0 +1,31 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+
+CREATE TABLE IF NOT EXISTS `taches_alert` (
+  `IdTache` int(10) NOT NULL AUTO_INCREMENT,
+  `EmetteurTache` int(10) NOT NULL,
+  `TitreTache` varchar(500) NOT NULL,
+  `DateDebutTache` datetime NOT NULL,
+  `DateFinTache` datetime NOT NULL,
+  `AlertTache` tinyint(1) NOT NULL DEFAULT '1' COMMENT '0 = No Alert; 1 = Alert',
+  `IdProjet` int(10) NOT NULL DEFAULT '0',
+  `PeriodiciteTache` varchar(20) NOT NULL DEFAULT '' COMMENT 'jour du mois 01 à 31 OU jour de la semain Mon, Tue, Wed, Thu, Fri, Sat, Sun',
+  PRIMARY KEY (`IdTache`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1391 ;
+
+CREATE TABLE IF NOT EXISTS `tache_beneficiaire` (
+  `IdTache` int(10) NOT NULL,
+  `IdBeneficiaire` int(10) NOT NULL,
+  `EtatTache` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0 = To Do; 1 = Done',
+  `LastDateAlertTache` date NOT NULL DEFAULT '0000-00-00'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

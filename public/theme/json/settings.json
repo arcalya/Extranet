@@ -1,0 +1,52 @@
+{
+    "default": {
+        "src":[
+            "lib/jquery/jquery.min.js",
+            "lib/jqueryfullscreen/jquery-fullscreen.min.js",
+            "lib/moment/moment.min.js",
+            "lib/daterangepicker/daterangepicker.js",
+            "lib/fullcalendar/fullcalendar.min.js",
+            "lib/fullcalendar/lang-all.js",
+            "lib/bootstrap/bootstrap.min.js",
+            
+            "plugins/loader/loader.js",  
+            
+            "scripts/interface/interface.js",
+            "scripts/datepicker/datepicker.js",          
+            "scripts/topbar/topbar.js",
+            "scripts/sidebar/sidebar.js",
+            "scripts/dropdownlist/dropdownlist.js",
+            "scripts/minified/minified.js",
+            "scripts/alertbox/alertbox.js",
+            "scripts/modal/modal.js",
+            "scripts/starsnotation/starsnotation.js",
+            
+            "scripts/ajaxform/ajaxform.js",
+            "scripts/ajaxactions/ajaxactions.js"
+            ]
+    },
+    "modules" :{
+        "schedule": {
+            "src" : [
+                "plugins/calendar/calendar.js",
+                "plugins/formpart/formpart.js"
+                ]
+        },
+        "request" : {
+            "src" : ["plugins/wizardassistant/wizardassistant.js"]
+        },
+        "workshops" : {
+            "src" : ["plugins/nextformpart/nextformpart.js"]
+        },
+        "contacts" : {
+            "src" : ["plugins/alphafilter/alphafilter.js"]
+        },
+        "reports" : {
+            "src" : ["scripts/datasfilter/datasfilter.js"]
+        },
+        "inventory" : {
+            "src" : ["plugins/basket/basket.js"]
+        }
+        
+    }
+}

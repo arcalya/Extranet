@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<translations language="fr">
+	<!--
+	Ce fichier devrait contenir toutes les traductions par défault.
+	Lorsqu'un module recherche une traduction que son objet Lang ne peut trouver
+	dans le langage actuellement sélectionné, ni dans le langage par défaut.
+	-->
+	<labels>
+            <pageHeadTitle>Site Web</pageHeadTitle>
+            <page404>Page inconnue</page404>
+            
+            <years>ans</years>
+            <year>an</year>
+            <months>mois</months>
+            <month>mois</month>
+            <days>jours</days>
+            <day>jour</day>
+            <hours>heures</hours>
+            <hour>heure</hour>
+            <minutes>minutes</minutes>
+            <minute>minute</minute>
+            <seconds>secondes</seconds>
+            <second>seconde</second>
+            <now>A l'instant</now>
+            
+            <monday>lundi</monday>
+            <tuesday>mardi</tuesday>
+            <wednesday>mercredi</wednesday>
+            <thursday>jeudi</thursday>
+            <friday>vendredi</friday>
+            <saturday>samedi</saturday>
+            <sunday>dimanche</sunday>
+
+            <january>janvier</january>
+            <february>février</february>
+            <march>mars</march>
+            <april>avril</april>
+            <may>mai</may>
+            <june>juin</june>
+            <july>juillet</july>
+            <august>août</august>
+            <september>septembre</september>
+            <october>octobre</october>
+            <november>novembre</november>
+            <december>décembre</december>
+            
+            <jan>jan.</jan>
+            <feb>fév.</feb>
+            <mar>mars</mar>
+            <apr>avril</apr>
+            <ma>mai</ma>
+            <jun>juin</jun>
+            <jul>juil.</jul>
+            <aug>août</aug>
+            <sept>sept.</sept>
+            <oct>oct.</oct>
+            <nov>nov.</nov>
+            <dec>déc.</dec>
+            
+            <st>er</st>
+            <nd>ième</nd>
+            <rd>ième</rd>
+            <th>ième</th>
+            
+			<more>En savoir plus...</more>
+			<less>Moins...</less>
+			<close>Fermer...</close>
+			
+            <result>résultat</result>
+            <results>résultats</results>
+            <to>à</to>
+            
+            
+            <pagenotfound>Page inconnue !</pagenotfound>
+            <pagedidnotfound>Cette page n'a pas été trouvée.</pagedidnotfound>
+            <pagedoesntexist>La page que vous tentez de consulter n'existe pas.</pagedoesntexist>
+            <pageitcould>Il se peut que :</pageitcould>
+            <pagecontainserror>l'adresse indiquée contient une erreur</pagecontainserror>
+            <pagelinknotuptodate>le lien qui vous amené à cette page n'est plus à jour.</pagelinknotuptodate>
+            <pagesuggest>Nous pouvons vous conseiller de </pagesuggest>
+            <pagebacktohom>retourner à la page d'accueil du site</pagebacktohom>
+	</labels>
+	<texts>
+		<text_name>traduction du texte</text_name>
+	</texts>
+</translations>

@@ -1,0 +1,20 @@
+div.container>header, div.container aside.col-md-3{display:none;}
+div.container>main {margin:0; min-height:0;}
+ul.tools-hz-bar {display:none;}
+.nav-tabs>li:not(.active)>a{display:none;}
+div.container main>div.row section{margin:0;}
+div.container>main>h3{position:absolute; top:0; right:0; border-bottom:1px solid #000;}
+div.container main>header>div.title_left{width:auto;}
+
+header.tools-header{border:none;}
+header.tools-header form, header.tools-header>ul.nav{display:none;}
+
+ul.nav.nav-tabs{display:none;}
+tr.cell-h1>td{display:none;}
+
+td[data-action="active"], 
+td[data-action="update"], 
+td[data-action="delete"], 
+td[data-toggle="modal"]{display:none;}
+
+.print_hide{display:none;}
